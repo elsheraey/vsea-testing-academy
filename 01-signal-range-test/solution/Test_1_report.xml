@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<testmodule starttime="2019-11-03 17:58:44" timestamp="   0.660000" verdicts="2_basic">
+  <violation timestamp="   0.660000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+  <testcase starttime="2019-11-03 17:58:44" timestamp="   0.660000">
+    <violation timestamp="   0.660000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+    <teststep timestamp="   0.660000" level="0" type="user" ident="" result="na">Set Signal_8 with Value [-50].</teststep>
+    <teststep timestamp="   0.660000" level="2" type="user" ident="Set signal value" result="na">Signal: &apos;Signal:CAN1/Vsea/CCU_125/Signal_8&apos;.  Value: -50 </teststep>
+    <teststep timestamp="   0.670000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=10ms (max=10ms)</teststep>
+    <teststep timestamp="   0.670000" type="user" ident="" result="pass">SYS_Signal_8 is equal to the value of Signal_8.</teststep>
+    <teststep timestamp="   0.670000" type="user" ident="" result="pass">SYS_Signal_8_VALID is equal to 1.</teststep>
+    <verdict time="2019-11-03 17:58:44" timestamp="   0.670000" endtime="2019-11-03 17:58:44" endtimestamp="   0.670000" result="pass" />
+    <title>Test if Signal_8 is in the range [-50, 50].</title>
+  </testcase>
+  <testcase starttime="2019-11-03 17:58:44" timestamp="   0.670000">
+    <violation timestamp="   0.670000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+    <teststep timestamp="   0.670000" level="0" type="user" ident="" result="na">Set Signal_8 with Value [-49].</teststep>
+    <teststep timestamp="   0.670000" level="2" type="user" ident="Set signal value" result="na">Signal: &apos;Signal:CAN1/Vsea/CCU_125/Signal_8&apos;.  Value: -49 </teststep>
+    <teststep timestamp="   0.680000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=10ms (max=10ms)</teststep>
+    <teststep timestamp="   0.680000" type="user" ident="" result="pass">SYS_Signal_8 is equal to the value of Signal_8.</teststep>
+    <teststep timestamp="   0.680000" type="user" ident="" result="pass">SYS_Signal_8_VALID is equal to 1.</teststep>
+    <verdict time="2019-11-03 17:58:44" timestamp="   0.680000" endtime="2019-11-03 17:58:44" endtimestamp="   0.680000" result="pass" />
+    <title>Test if Signal_8 is in the range [-50, 50].</title>
+  </testcase>
+  <testcase starttime="2019-11-03 17:58:44" timestamp="   0.680000">
+    <violation timestamp="   0.680000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+    <teststep timestamp="   0.680000" level="0" type="user" ident="" result="na">Set Signal_8 with Value [-1].</teststep>
+    <teststep timestamp="   0.680000" level="2" type="user" ident="Set signal value" result="na">Signal: &apos;Signal:CAN1/Vsea/CCU_125/Signal_8&apos;.  Value: -1 </teststep>
+    <teststep timestamp="   0.690000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=10ms (max=10ms)</teststep>
+    <teststep timestamp="   0.690000" type="user" ident="" result="pass">SYS_Signal_8 is equal to the value of Signal_8.</teststep>
+    <teststep timestamp="   0.690000" type="user" ident="" result="pass">SYS_Signal_8_VALID is equal to 1.</teststep>
+    <verdict time="2019-11-03 17:58:44" timestamp="   0.690000" endtime="2019-11-03 17:58:44" endtimestamp="   0.690000" result="pass" />
+    <title>Test if Signal_8 is in the range [-50, 50].</title>
+  </testcase>
+  <testcase starttime="2019-11-03 17:58:44" timestamp="   0.690000">
+    <violation timestamp="   0.690000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+    <teststep timestamp="   0.690000" level="0" type="user" ident="" result="na">Set Signal_8 with Value [0].</teststep>
+    <teststep timestamp="   0.690000" level="2" type="user" ident="Set signal value" result="na">Signal: &apos;Signal:CAN1/Vsea/CCU_125/Signal_8&apos;.  Value: 0 </teststep>
+    <teststep timestamp="   0.700000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=10ms (max=10ms)</teststep>
+    <teststep timestamp="   0.700000" type="user" ident="" result="pass">SYS_Signal_8 is equal to the value of Signal_8.</teststep>
+    <teststep timestamp="   0.700000" type="user" ident="" result="pass">SYS_Signal_8_VALID is equal to 1.</teststep>
+    <verdict time="2019-11-03 17:58:44" timestamp="   0.700000" endtime="2019-11-03 17:58:44" endtimestamp="   0.700000" result="pass" />
+    <title>Test if Signal_8 is in the range [-50, 50].</title>
+  </testcase>
+  <testcase starttime="2019-11-03 17:58:44" timestamp="   0.700000">
+    <violation timestamp="   0.700000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+    <teststep timestamp="   0.700000" level="0" type="user" ident="" result="na">Set Signal_8 with Value [1].</teststep>
+    <teststep timestamp="   0.700000" level="2" type="user" ident="Set signal value" result="na">Signal: &apos;Signal:CAN1/Vsea/CCU_125/Signal_8&apos;.  Value: 1 </teststep>
+    <teststep timestamp="   0.710000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=10ms (max=10ms)</teststep>
+    <teststep timestamp="   0.710000" type="user" ident="" result="pass">SYS_Signal_8 is equal to the value of Signal_8.</teststep>
+    <teststep timestamp="   0.710000" type="user" ident="" result="pass">SYS_Signal_8_VALID is equal to 1.</teststep>
+    <verdict time="2019-11-03 17:58:44" timestamp="   0.710000" endtime="2019-11-03 17:58:44" endtimestamp="   0.710000" result="pass" />
+    <title>Test if Signal_8 is in the range [-50, 50].</title>
+  </testcase>
+  <testcase starttime="2019-11-03 17:58:44" timestamp="   0.710000">
+    <violation timestamp="   0.710000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+    <teststep timestamp="   0.710000" level="0" type="user" ident="" result="na">Set Signal_8 with Value [49].</teststep>
+    <teststep timestamp="   0.710000" level="2" type="user" ident="Set signal value" result="na">Signal: &apos;Signal:CAN1/Vsea/CCU_125/Signal_8&apos;.  Value: 49 </teststep>
+    <teststep timestamp="   0.720000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=10ms (max=10ms)</teststep>
+    <teststep timestamp="   0.720000" type="user" ident="" result="pass">SYS_Signal_8 is equal to the value of Signal_8.</teststep>
+    <teststep timestamp="   0.720000" type="user" ident="" result="pass">SYS_Signal_8_VALID is equal to 1.</teststep>
+    <verdict time="2019-11-03 17:58:44" timestamp="   0.720000" endtime="2019-11-03 17:58:44" endtimestamp="   0.720000" result="pass" />
+    <title>Test if Signal_8 is in the range [-50, 50].</title>
+  </testcase>
+  <testcase starttime="2019-11-03 17:58:44" timestamp="   0.720000">
+    <violation timestamp="   0.720000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+    <teststep timestamp="   0.720000" level="0" type="user" ident="" result="na">Set Signal_8 with Value [50].</teststep>
+    <teststep timestamp="   0.720000" level="2" type="user" ident="Set signal value" result="na">Signal: &apos;Signal:CAN1/Vsea/CCU_125/Signal_8&apos;.  Value: 50 </teststep>
+    <teststep timestamp="   0.730000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=10ms (max=10ms)</teststep>
+    <teststep timestamp="   0.730000" type="user" ident="" result="pass">SYS_Signal_8 is equal to the value of Signal_8.</teststep>
+    <teststep timestamp="   0.730000" type="user" ident="" result="pass">SYS_Signal_8_VALID is equal to 1.</teststep>
+    <verdict time="2019-11-03 17:58:44" timestamp="   0.730000" endtime="2019-11-03 17:58:44" endtimestamp="   0.730000" result="pass" />
+    <title>Test if Signal_8 is in the range [-50, 50].</title>
+  </testcase>
+  <testcase starttime="2019-11-03 17:58:44" timestamp="   0.730000">
+    <violation timestamp="   0.730000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+    <teststep timestamp="   0.730000" level="0" type="user" ident="" result="na">Set Signal_8 with Value [51].</teststep>
+    <teststep timestamp="   0.730000" level="2" type="user" ident="Set signal value" result="na">Signal: &apos;Signal:CAN1/Vsea/CCU_125/Signal_8&apos;.  Value: 51 </teststep>
+    <teststep timestamp="   0.740000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=10ms (max=10ms)</teststep>
+    <teststep timestamp="   0.740000" type="user" ident="" result="pass">SYS_Signal_8 is equal to the default value.</teststep>
+    <teststep timestamp="   0.740000" type="user" ident="" result="pass">SYS_Signal_8_VALID is equal to 0.</teststep>
+    <verdict time="2019-11-03 17:58:44" timestamp="   0.740000" endtime="2019-11-03 17:58:44" endtimestamp="   0.740000" result="pass" />
+    <title>Test if Signal_8 is out of the range [-50, 50].</title>
+  </testcase>
+  <testcase starttime="2019-11-03 17:58:44" timestamp="   0.740000">
+    <violation timestamp="   0.740000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+    <teststep timestamp="   0.740000" level="0" type="user" ident="" result="na">Set Signal_8 with Value [-51].</teststep>
+    <teststep timestamp="   0.740000" level="2" type="user" ident="Set signal value" result="na">Signal: &apos;Signal:CAN1/Vsea/CCU_125/Signal_8&apos;.  Value: -51 </teststep>
+    <teststep timestamp="   0.750000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=10ms (max=10ms)</teststep>
+    <teststep timestamp="   0.750000" type="user" ident="" result="pass">SYS_Signal_8 is equal to the default value.</teststep>
+    <teststep timestamp="   0.750000" type="user" ident="" result="pass">SYS_Signal_8_VALID is equal to 0.</teststep>
+    <verdict time="2019-11-03 17:58:44" timestamp="   0.750000" endtime="2019-11-03 17:58:44" endtimestamp="   0.750000" result="pass" />
+    <title>Test if Signal_8 is out of the range [-50, 50].</title>
+  </testcase>
+  <testcase starttime="2019-11-03 17:58:44" timestamp="   0.750000">
+    <violation timestamp="   0.750000" type="warning" result="warn">This is only a DEMO variant of CANoe!</violation>
+    <teststep timestamp="   0.750000" level="0" type="user" ident="" result="na">Disable message carying Signal_8</teststep>
+    <teststep timestamp="   0.750000" level="2" type="user" ident="FaultInjection-function" result="pass">TestDisableMsg: Message CCU_125 - successfully.</teststep>
+    <teststep timestamp="   0.750000" level="0" type="user" ident="" result="na">Wait [200]ms</teststep>
+    <teststep timestamp="   0.950000" level="1" type="auto" ident="Resume reason" result="na">Elapsed time=200ms (max=200ms)</teststep>
+    <teststep timestamp="   0.950000" type="user" ident="" result="pass">SYS_Signal_8 equals to the default and SYS_Signal_8_VALID is equal to 0.</teststep>
+    <verdict time="2019-11-03 17:58:44" timestamp="   0.950000" endtime="2019-11-03 17:58:44" endtimestamp="   0.950000" result="pass" />
+    <title>Test if Signal_8 is not sent on the bus for SIGNAL_TIMEOUT.</title>
+  </testcase>
+  <verdict time="2019-11-03 17:58:44" timestamp="   0.950000" endtime="2019-11-03 17:58:44" endtimestamp="   0.950000" result="pass" />
+  <title>Test 1</title>
+  <testlogfiles>
+  </testlogfiles>
+  <engineer>
+    <xinfo>
+      <name>Windows Login Name</name>
+      <description>Mourad</description>
+    </xinfo>
+    <info>
+      <name>Mourad</name>
+      <description>ElSheraey</description>
+    </info>
+  </engineer>
+  <testsetup>
+    <xinfo>
+      <name>Version</name>
+      <description>CANoe.ISO11783.J1939.CANopen.CAN.LIN.MOST.FlexRay.J1587.Ethernet.AFDX.A429.Scope.SmartCharging [DEMO] 12.0.101 (SP2)</description>
+    </xinfo>
+    <xinfo>
+      <name>Configuration</name>
+      <description>C:\Users\Mourad\Desktop\CANoe_CAPL Exercises\VSeA.cfg</description>
+    </xinfo>
+    <xinfo>
+      <name>Database Vsea on CAN</name>
+      <description>C:\Users\Mourad\Desktop\CANoe_CAPL Exercises\Vsea.dbc (2019-03-04 20:08:22)</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module Name</name>
+      <description>Test_1</description>
+    </xinfo>
+    <xinfo>
+      <name>Test Module File</name>
+      <description>C:\Users\Mourad\Desktop\CANoe_CAPL Exercises\Test_1.can</description>
+    </xinfo>
+    <xinfo>
+      <name>Last modification of Test Module File</name>
+      <description>2019-11-03, 17:56:12</description>
+    </xinfo>
+    <xinfo>
+      <name>Windows Computer Name</name>
+      <description>DESKTOP-1HRT5E0</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module J1939TestServiceLibraryNL</name>
+      <description>J1939 Test Service Library for CANoe, Version 12.0.101.0, c:\Program Files\Vector CANoe 12.0\Exec32\J1939TestServiceLibraryNL.dll</description>
+    </xinfo>
+    <xinfo>
+      <name>Nodelayer Module CANOEILNLVECTOR</name>
+      <description>CANoe Interaction Layer NL (Vector) Version 3.17.66 (Jan 30 2019 12:34:12) , c:\Program Files\Vector CANoe 12.0\Exec32\CANOEILNLVECTOR.DLL</description>
+    </xinfo>
+  </testsetup>
+</testmodule>
+<!--footprint="24ccd715c5b87377ccda2677fe857f8c" version="1"-->

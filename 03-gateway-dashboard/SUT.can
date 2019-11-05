@@ -1,0 +1,33 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message SUT_123 message_SUT;
+  msTimer timer_SUT;
+}
+
+on start
+{
+  setTimerCyclic(timer_SUT, SUT_123.GenMsgCycleTime);
+  
+  @sysvar::Signals::Signal_1 = message_SUT.Signal_1;
+  @sysvar::Signals::Signal_2 = message_SUT.Signal_2;
+  @sysvar::Signals::Signal_3 = message_SUT.Signal_3;
+  @sysvar::Signals::Signal_4 = message_SUT.Signal_4;
+}
+
+on timer timer_SUT
+{
+  //write("%d", message_SUT.GenMsgCycleTime);
+  
+  @sysvar::Signals::Signal_1 = message_SUT.Signal_1;
+  @sysvar::Signals::Signal_2 = message_SUT.Signal_2;
+  @sysvar::Signals::Signal_3 = message_SUT.Signal_3;
+  @sysvar::Signals::Signal_4 = message_SUT.Signal_4;
+  
+  output(message_SUT);
+}

@@ -1,0 +1,64 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  msTimer t_CCU_125;
+  
+  byte CCU_125_Flag;
+  byte CCU_125_Counter;
+  byte t_CCU_125_Counter;
+}
+
+on start
+{
+  @SYS_Signal_8 = getSignal(Signal_8);
+  @SYS_Signal_8_VALID = 1;
+  
+  setTimerCyclic(t_CCU_125,1);
+  
+  t_CCU_125_Counter = 0;
+  CCU_125_Flag = 0;
+}
+
+on message CCU_125
+{
+  if ( (this.Signal_8.phys>= -50) && (this.Signal_8.phys <= 50))
+  {
+    @SYS_Signal_8 = this.Signal_8.phys;
+    @SYS_Signal_8_VALID = 1;
+  }
+  
+  else
+  {
+    @SYS_Signal_8 = 0;
+    @SYS_Signal_8_VALID = 0;
+  }
+  
+  CCU_125_Flag = 1;
+}
+
+
+
+on timer t_CCU_125
+{
+  if (CCU_125_Flag == 1)
+  {
+    CCU_125_Flag = 0;
+    t_CCU_125_Counter = 0;
+  }
+  else
+  {
+    t_CCU_125_Counter ++;
+    
+    if (t_CCU_125_Counter == 200)
+    {
+      @SYS_Signal_8 = 0;
+      @SYS_Signal_8_VALID = 0;
+    }
+  }
+}
+

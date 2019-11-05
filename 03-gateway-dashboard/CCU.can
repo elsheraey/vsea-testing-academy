@@ -1,0 +1,45 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message CCU_125 message_CCU;
+  msTimer timer_CCU;
+}
+
+on start
+{ 
+  // Default: ON
+  @sysvar::Switches::Switch_CCU = 1;
+    
+  setTimerCyclic(timer_CCU, CCU_125.GenMsgCycleTime);
+  
+  @sysvar::Signals::Signal_8 = message_CCU.Signal_8;
+  @sysvar::Signals::Signal_9 = message_CCU.Signal_9;
+}
+
+on timer timer_CCU
+{
+  //write("%d", message_CCU.GenMsgCycleTime);
+  
+  @sysvar::Signals::Signal_8 = message_CCU.Signal_8;
+  @sysvar::Signals::Signal_9 = message_CCU.Signal_9;
+  
+  if (@sysvar::Switches::Switch_CCU == 1)
+  {
+    output(message_CCU);
+  } 
+}
+
+on sysvar sysvar::Signals::Signal_8
+{
+  message_CCU.Signal_8 = @sysvar::Signals::Signal_8;
+}
+
+on sysvar sysvar::Signals::Signal_9
+{
+  message_CCU.Signal_9 = @sysvar::Signals::Signal_9;
+}

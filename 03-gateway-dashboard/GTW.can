@@ -1,0 +1,52 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message GTW_124 message_GTW;
+  msTimer timer_GTW;
+}
+
+on start
+{
+  // Default: ON
+  @sysvar::Switches::Switch_GTW = 1;
+  
+  setTimerCyclic(timer_GTW, GTW_124.GenMsgCycleTime);
+  
+  @sysvar::Signals::Signal_5 = message_GTW.Signal_5;
+  @sysvar::Signals::Signal_6 = message_GTW.Signal_6;
+  @sysvar::Signals::Signal_7 = message_GTW.Signal_7;
+}
+
+on timer timer_GTW
+{
+  //write("%d", message_GTW.GenMsgCycleTime); 
+
+  @sysvar::Signals::Signal_5 = message_GTW.Signal_5;
+  @sysvar::Signals::Signal_6 = message_GTW.Signal_6;
+  @sysvar::Signals::Signal_7 = message_GTW.Signal_7;
+  
+  if (@sysvar::Switches::Switch_GTW == 1)
+  {
+    output(message_GTW);
+  }
+}
+
+on sysvar sysvar::Signals::Signal_5
+{
+  message_GTW.Signal_5 = @sysvar::Signals::Signal_5;
+}
+
+on sysvar sysvar::Signals::Signal_6
+{
+  message_GTW.Signal_6 = @sysvar::Signals::Signal_6;
+}
+
+on sysvar sysvar::Signals::Signal_7
+{
+  message_GTW.Signal_7 = @sysvar::Signals::Signal_7;
+}

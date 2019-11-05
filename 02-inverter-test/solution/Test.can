@@ -1,0 +1,154 @@
+/*@!Encoding:1252*/
+
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+void MainTest ()
+{
+  testModuleTitle("Test 1");
+  testReportAddEngineerInfo("Mourad", "ElSheraey");
+  // testReportAddSetupInfo("", "");
+  
+  //TestCase02();
+  TestCase03();
+}
+
+testcase TestCase02()
+{
+  testCaseTitle("", "Test Scenario 2");
+  testCaseDescription("Cover the following scenario (Power Off - Inactive - Power Off)");
+  
+  testStep("", "Send NM farme with value [1]");
+  setSignal("NM_eMOT", 1);
+  
+  testStep("", "Wait [1500]ms");
+  testWaitForTimeout(1500);
+  
+  if (getSignal(eMOT_Stat) == 1) 
+  {
+    testStepPass("System is in inactive state");
+  }
+  else
+  {
+    testStepFail("System is in inactive state");
+  }
+  
+  testStep("", "Configure Current sensor to [3] current sensors");
+  setSignal(Curr_Sens_Cnt, 3);
+  
+  testStep("", "Wait [20]ms.");
+  testWaitForTimeout(20);
+  
+  testStep("", "Configure E-Motor Type to [IM]");
+  setSignal(eMOT_Type, 1);
+  
+  testStep("", "Wait [20]ms.");
+  testWaitForTimeout(20);
+
+  testStep("", "Configure Motor Speed Mechanism to [Resolver]");
+  setSignal(MOT_Spd_Mech, 0);
+  
+  testStep("", "Wait [1000]ms.");
+  testWaitForTimeout(1000);
+    
+  testStep("", "Send NM farme with value [0]");
+  setSignal("NM_eMOT", 0);
+  
+  testStep("", "Wait [20]ms");
+  testWaitForTimeout(20);
+  
+  if (getSignal(eMOT_Stat) == 0) 
+  {
+    testStepPass("System is OFF");
+  }
+  else
+  {
+    testStepFail("System is OFF");
+  }  
+}
+
+testcase TestCase03()
+{
+  testCaseTitle("", "Test Scenario 3");
+  testCaseDescription("Cover the following scenario (Power Off - Inactive - Fault - Inactive - Power Off) + Negative testing for motor requests");
+  
+  testStep("", "Send NM frame with value [1]");
+  setSignal(NM_eMOT::NM_eMOT, 1);
+ 
+  testStep("", "Wait [1500]ms");
+  testWaitForTimeout(1500);
+  
+  if (getSignal(eMOT_Stat) == 1) 
+  {
+    testStepPass("System is in inactive state");
+  }
+  else
+  {
+    testStepFail("System is in inactive state");
+  }
+  
+  testStep("", "Configure Current sensor to [3] current sensors");
+  setSignal(Curr_Sens_Cnt, 3);
+  
+  testStep("", "Wait [20]ms.");
+  testWaitForTimeout(20);
+  
+  testStep("", "Configure E-Motor Type to [PMSM]");
+  setSignal(eMOT_Type, 0);
+  
+  testStep("", "Wait [20]ms.");
+  testWaitForTimeout(20);
+
+  testStep("", "Configure Motor Speed Mechanism to [Resolver]");
+  setSignal(MOT_Spd_Mech, 1);
+  
+  testStep("", "Wait [20]ms.");
+  testWaitForTimeout(20);
+  
+  if (getSignal(eMOT_Stat) == 5) 
+  {
+    testStepPass("System is in fault state");
+  }
+  else
+  {
+    testStepFail("System is in fault state");
+  } 
+  
+  testStep("", "Configure Current sensor to [2] current sensors");
+  setSignal(Curr_Sens_Cnt, 2);
+  
+  testStep("", "Wait [600]ms");
+  testWaitForTimeout(600);
+  
+  if (getSignal(eMOT_Stat) == 1) 
+  {
+    testStepPass("System is in inactive state after fault resolution");
+  }
+  else
+  {
+    testStepFail("System is in inactive state after fault resolution");
+  } 
+  
+  testStep("", "Send NM frame with value [0]");
+  setSignal(NM_eMOT::NM_eMOT, 0);
+ 
+  testStep("", "Wait [20]ms");
+  testWaitForTimeout(20);
+  
+  if (getSignal(eMOT_Stat) == 0) 
+  {
+    testStepPass("System is OFF");
+  }
+  else
+  {
+    testStepFail("System is OFF");
+  } 
+}
+

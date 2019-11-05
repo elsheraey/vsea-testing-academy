@@ -1,0 +1,1449 @@
+<ns0:PACKAGE xmlns:ns0="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format-rev="6" prog-version="7.1.0.75213" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<ns0:INFORMATION xsi:type="packageInfo">
+		<ns0:DESCRIPTION xsi:type="unicode" />
+		<ns0:VERSION xsi:type="unicode" />
+		<ns0:ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="unicode" />
+		<ns0:ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="unicode" />
+	</ns0:INFORMATION>
+	<ns0:VARIABLES xsi:type="variableContainer">
+		<ns0:VARIABLE format-rev="1" xsi:type="variable">
+			<ns0:NAME xsi:type="unicode">offset</ns0:NAME>
+			<ns0:DESCRIPTION xsi:type="unicode" />
+			<ns0:DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<ns0:DATA xsi:type="integer">0</ns0:DATA>
+			</ns0:DEFAULT-VALUE>
+		</ns0:VARIABLE>
+		<ns0:VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<ns0:NAME xsi:type="unicode">Raw_Value</ns0:NAME>
+			<ns0:DESCRIPTION xsi:type="unicode" />
+			<ns0:DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<ns0:DATA xsi:type="integer">0</ns0:DATA>
+			</ns0:DEFAULT-VALUE>
+		</ns0:VARIABLE>
+		<ns0:VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<ns0:NAME xsi:type="unicode">Phys_value</ns0:NAME>
+			<ns0:DESCRIPTION xsi:type="unicode" />
+			<ns0:DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<ns0:DATA xsi:type="integer">0</ns0:DATA>
+			</ns0:DEFAULT-VALUE>
+		</ns0:VARIABLE>
+		<ns0:VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<ns0:NAME xsi:type="unicode">TestHookNumbervalue</ns0:NAME>
+			<ns0:DESCRIPTION xsi:type="unicode" />
+			<ns0:DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<ns0:DATA xsi:type="integer">0</ns0:DATA>
+			</ns0:DEFAULT-VALUE>
+		</ns0:VARIABLE>
+	</ns0:VARIABLES>
+	<ns0:MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">ActSpeed</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">DrvCtrlDem_ReactionSts_NONE</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">EcuProdDataParamOem.F1A3_EcuHwVersion</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">EmCalibReq</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">Emm_CurrentMode</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">Event_Memory_EventId_0</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">Event_Memory_EventId_1</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">Event_Memory_EventId_2</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">Event_Memory_EventId_3</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">Event_Memory_EventId_4</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">Event_Memory_EventId_5</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">Event_Memory_EventId_6</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">Event_Memory_EventId_7</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">Event_Memory_EventId_8</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">Event_Memory_EventId_9</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">F189_VWApplicationSoftwareVersionNumber</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">GenericECU/SWIT_Comm_activationFlag</ns0:ID>
+			<ns0:XACCESS xsi:type="xaCalibValueVariable">
+				<ns0:MAPPING-ENUM xsi:type="vtabInfoEmpty" />
+				<ns0:ECU-KEY xsi:type="unicode">GenericECU</ns0:ECU-KEY>
+				<ns0:LABEL xsi:type="unicode">SWIT_Comm_activationFlag</ns0:LABEL>
+			</ns0:XACCESS>
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">GenericECU/SWIT_RX_TestHook_Uint8</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMeasValueVariable">
+				<ns0:MAPPING-ENUM xsi:type="vtabInfoEmpty" />
+				<ns0:ECU-KEY xsi:type="unicode">GenericECU</ns0:ECU-KEY>
+				<ns0:LABEL xsi:type="unicode">SWIT_RX_TestHook_Uint8</ns0:LABEL>
+				<ns0:RASTER xsi:type="unicode">C0_1ms_Com</ns0:RASTER>
+			</ns0:XACCESS>
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">GenericECU/SWIT_testHookNo</ns0:ID>
+			<ns0:XACCESS xsi:type="xaCalibValueVariable">
+				<ns0:MAPPING-ENUM xsi:type="vtabInfoEmpty" />
+				<ns0:ECU-KEY xsi:type="unicode">GenericECU</ns0:ECU-KEY>
+				<ns0:LABEL xsi:type="unicode">SWIT_testHookNo</ns0:LABEL>
+			</ns0:XACCESS>
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">SftyC2cData_RslvrOffs</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">SftyC2cData_RslvrOffsVld</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">SftyInvActrSts</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms_Canape</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">SftySbcCtrlKl15Sts</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">SftyTqMonTqAct</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">SftyTqMonTqEstimd</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">SigWr_PECInIf_vWhlReRi_VW</ns0:ID>
+			<ns0:XACCESS xsi:type="xaReadWriteValueVariable">
+				<ns0:MAPPING-ENUM xsi:type="vtabInfoEmpty" />
+			</ns0:XACCESS>
+			<ns0:AUTO-GENERATED xsi:type="boolean">False</ns0:AUTO-GENERATED>
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">SpdAct</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">StateAct</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">StateReq</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">TqAct</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">TqMgr_OutputData_TqLimnMax</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">TqMgr_OutputData_TqLimnMin</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">TqReq</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMissingVariable" />
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">BMS_IstModus</ns0:ID>
+			<ns0:DESCRIPTION xsi:type="unicode">hinten links</ns0:DESCRIPTION>
+			<ns0:XACCESS format-rev="1" xsi:type="xaBusSignalVariable">
+				<ns0:MAPPING-ENUM xsi:type="vtabInfoEmpty" />
+				<ns0:BUS-KEY xsi:type="unicode">A-CAN-FD</ns0:BUS-KEY>
+				<ns0:FRAME-NAME xsi:type="unicode">BMS_20</ns0:FRAME-NAME>
+				<ns0:SIGNAL-NAME xsi:type="unicode">BMS_IstModus</ns0:SIGNAL-NAME>
+			</ns0:XACCESS>
+			<ns0:AUTO-GENERATED xsi:type="boolean">False</ns0:AUTO-GENERATED>
+			<ns0:CATEGORY xsi:type="unicode">BMS_20</ns0:CATEGORY>
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">SigWr_BMS_IstModus_1ms</ns0:ID>
+			<ns0:XACCESS xsi:type="xaMeasValueVariable">
+				<ns0:MAPPING-ENUM xsi:type="vtabInfoEmpty" />
+				<ns0:ECU-KEY xsi:type="unicode">GenericECU</ns0:ECU-KEY>
+				<ns0:LABEL xsi:type="unicode">SigWr_BMS_IstModus_Phy_syssigBMS_IstModus</ns0:LABEL>
+				<ns0:RASTER xsi:type="unicode">C0_1ms_Com</ns0:RASTER>
+			</ns0:XACCESS>
+			<ns0:AUTO-GENERATED xsi:type="boolean">False</ns0:AUTO-GENERATED>
+			<ns0:CATEGORY xsi:type="unicode">SigWr</ns0:CATEGORY>
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">BMS_IstModus_RBS</ns0:ID>
+			<ns0:DESCRIPTION xsi:type="unicode">hinten links</ns0:DESCRIPTION>
+			<ns0:XACCESS format-rev="1" xsi:type="xaBusSignalVariable">
+				<ns0:MAPPING-ENUM xsi:type="vtabInfoEmpty" />
+				<ns0:BUS-KEY xsi:type="unicode">A-CAN-FD</ns0:BUS-KEY>
+				<ns0:FRAME-NAME xsi:type="unicode">BMS_20</ns0:FRAME-NAME>
+				<ns0:SIGNAL-NAME xsi:type="unicode">BMS_IstModus</ns0:SIGNAL-NAME>
+				<ns0:MANIPULATION xsi:type="signalManipulationParams">
+					<ns0:DURATION style="message-count" xsi:type="manipulationDuration">
+						<ns0:VALUE xsi:type="integer">0</ns0:VALUE>
+					</ns0:DURATION>
+				</ns0:MANIPULATION>
+			</ns0:XACCESS>
+			<ns0:AUTO-GENERATED xsi:type="boolean">False</ns0:AUTO-GENERATED>
+			<ns0:CATEGORY xsi:type="unicode">BMS_20_RBS</ns0:CATEGORY>
+		</ns0:MAPPING-ITEM>
+		<ns0:MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ns0:ID xsi:type="unicode">BMS_IstModus_canape</ns0:ID>
+			<ns0:DESCRIPTION xsi:type="unicode">hinten links</ns0:DESCRIPTION>
+			<ns0:XACCESS format-rev="1" xsi:type="xaBusSignalVariable">
+				<ns0:MAPPING-ENUM xsi:type="vtabInfoEmpty" />
+				<ns0:BUS-KEY xsi:type="unicode">A-CAN-FD_CANAPE</ns0:BUS-KEY>
+				<ns0:FRAME-NAME xsi:type="unicode">BMS_20</ns0:FRAME-NAME>
+				<ns0:SIGNAL-NAME xsi:type="unicode">BMS_IstModus</ns0:SIGNAL-NAME>
+			</ns0:XACCESS>
+			<ns0:AUTO-GENERATED xsi:type="boolean">False</ns0:AUTO-GENERATED>
+			<ns0:CATEGORY xsi:type="unicode">BMS_20</ns0:CATEGORY>
+		</ns0:MAPPING-ITEM>
+	</ns0:MAPPING>
+	<ns0:TRACE-RECORDING format-rev="1" xsi:type="recordingManager">
+		<ns0:SIGNAL-GROUPS>
+			<ns0:ELEMENT format-rev="2" xsi:type="signalGroup">
+				<ns0:NAME xsi:type="unicode">A2l</ns0:NAME>
+				<ns0:DESCRIPTION xsi:type="unicode">...</ns0:DESCRIPTION>
+				<ns0:SIGNALS>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">GenericECU/SWIT_RX_TestHook_Uint8</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">GenericECU/SWIT_Comm_activationFlag</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">SigWr_BMS_IstModus_1ms</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+				</ns0:SIGNALS>
+			</ns0:ELEMENT>
+			<ns0:ELEMENT format-rev="2" xsi:type="signalGroup">
+				<ns0:NAME xsi:type="unicode">GenericECU_CANape</ns0:NAME>
+				<ns0:SIGNALS>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms_Canape</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+				</ns0:SIGNALS>
+			</ns0:ELEMENT>
+			<ns0:ELEMENT format-rev="2" xsi:type="signalGroup">
+				<ns0:NAME xsi:type="unicode">A-CAN-FD_VWSignals</ns0:NAME>
+				<ns0:SIGNALS>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">TqReq</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">StateReq</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">TqAct</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">SpdAct</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">StateAct</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">EmCalibReq</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+				</ns0:SIGNALS>
+			</ns0:ELEMENT>
+			<ns0:ELEMENT format-rev="2" xsi:type="signalGroup">
+				<ns0:NAME xsi:type="unicode">A2l_VWSignals</ns0:NAME>
+				<ns0:DESCRIPTION xsi:type="unicode">...</ns0:DESCRIPTION>
+				<ns0:SIGNALS>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">Emm_CurrentMode</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">SftyTqMonTqAct</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">SftyTqMonTqEstimd</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">TqMgr_OutputData_TqLimnMax</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">TqMgr_OutputData_TqLimnMin</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">DrvCtrlDem_ReactionSts_NONE</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">SftyInvActrSts</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">SftySbcCtrlKl15Sts</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">Event_Memory_EventId_0</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">Event_Memory_EventId_1</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">Event_Memory_EventId_2</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">Event_Memory_EventId_3</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">Event_Memory_EventId_4</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">Event_Memory_EventId_5</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">Event_Memory_EventId_6</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">Event_Memory_EventId_7</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">Event_Memory_EventId_8</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">Event_Memory_EventId_9</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">SftyC2cData_RslvrOffsVld</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">SftyC2cData_RslvrOffs</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">ActSpeed</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">F189_VWApplicationSoftwareVersionNumber</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">EcuProdDataParamOem.F1A3_EcuHwVersion</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+				</ns0:SIGNALS>
+			</ns0:ELEMENT>
+			<ns0:ELEMENT format-rev="2" xsi:type="signalGroup">
+				<ns0:NAME xsi:type="unicode">Canape_Signals</ns0:NAME>
+				<ns0:DESCRIPTION xsi:type="unicode">...</ns0:DESCRIPTION>
+				<ns0:SIGNALS>
+					<ns0:ELEMENT xsi:type="signal">
+						<ns0:MAPPING-REF xsi:type="unicode">BMS_IstModus_canape</ns0:MAPPING-REF>
+					</ns0:ELEMENT>
+				</ns0:SIGNALS>
+			</ns0:ELEMENT>
+		</ns0:SIGNAL-GROUPS>
+		<ns0:RECORDING-GROUP>
+			<ns0:ELEMENT format-rev="2" xsi:type="recordingGroup">
+				<ns0:NAME xsi:type="unicode">Recording group for A2l</ns0:NAME>
+				<ns0:UUID xsi:type="string">0a345070784411e8aa9a14abc584c8a4</ns0:UUID>
+				<ns0:FILE-NAME xsi:type="unicode">A2l</ns0:FILE-NAME>
+				<ns0:SIGNAL-GROUP-REF>A2l</ns0:SIGNAL-GROUP-REF>
+			</ns0:ELEMENT>
+			<ns0:ELEMENT format-rev="2" xsi:type="recordingGroup">
+				<ns0:NAME xsi:type="unicode">Recording group for GenericECU_CANape</ns0:NAME>
+				<ns0:UUID xsi:type="string">78bba6a1997411e8aa073c18a00d9078</ns0:UUID>
+				<ns0:FILE-NAME xsi:type="unicode">GenericECU_CANape</ns0:FILE-NAME>
+				<ns0:SIGNAL-GROUP-REF>GenericECU_CANape</ns0:SIGNAL-GROUP-REF>
+			</ns0:ELEMENT>
+			<ns0:ELEMENT format-rev="2" xsi:type="recordingGroup">
+				<ns0:NAME xsi:type="unicode">A-CAN-FD_VWSignals</ns0:NAME>
+				<ns0:UUID xsi:type="string">edd6ec8fac4011e887c514abc584c8a4</ns0:UUID>
+				<ns0:FILE-NAME xsi:type="unicode">A-CAN-FD_VWSignals</ns0:FILE-NAME>
+				<ns0:SIGNAL-GROUP-REF>A-CAN-FD_VWSignals</ns0:SIGNAL-GROUP-REF>
+			</ns0:ELEMENT>
+			<ns0:ELEMENT format-rev="2" xsi:type="recordingGroup">
+				<ns0:NAME xsi:type="unicode">Recording group for A2l_VWSignals</ns0:NAME>
+				<ns0:UUID xsi:type="string">3b8454a1ac4111e8b7fb14abc584c8a4</ns0:UUID>
+				<ns0:FILE-NAME xsi:type="unicode">A2l_VWSignals</ns0:FILE-NAME>
+				<ns0:SIGNAL-GROUP-REF>A2l_VWSignals</ns0:SIGNAL-GROUP-REF>
+			</ns0:ELEMENT>
+			<ns0:ELEMENT format-rev="2" xsi:type="recordingGroup">
+				<ns0:NAME xsi:type="unicode">Recording group for Canape_Signals</ns0:NAME>
+				<ns0:UUID xsi:type="string">caadc1aebfde11e881e900a0c6000014</ns0:UUID>
+				<ns0:FILE-NAME xsi:type="unicode">Canape_Signals</ns0:FILE-NAME>
+				<ns0:SIGNAL-GROUP-REF>Canape_Signals</ns0:SIGNAL-GROUP-REF>
+			</ns0:ELEMENT>
+		</ns0:RECORDING-GROUP>
+	</ns0:TRACE-RECORDING>
+	<ns0:TESTSTEPS xsi:type="testCase">
+		<ns0:TESTSTEP format-rev="1" id="236446269" name="TsPrecondBlock" xsi:type="utility-fd32d18b-c16d-45ca-9934-f8bffe11fcc3">
+			<ns0:BLOCK-NAME xsi:type="I18NItem">
+				<ns0:MULTILANGDATA>
+					<ns0:ELEMENT dkey="de_DE">
+						<ns0:DVALUE xsi:type="unicode">Precondition</ns0:DVALUE>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT dkey="en_US">
+						<ns0:DVALUE xsi:type="unicode">Precondition</ns0:DVALUE>
+					</ns0:ELEMENT>
+				</ns0:MULTILANGDATA>
+				<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+			</ns0:BLOCK-NAME>
+			<ns0:ACTION xsi:type="I18NItem">
+				<ns0:MULTILANGDATA>
+					<ns0:ELEMENT dkey="de_DE">
+						<ns0:DVALUE xsi:type="unicode">Precondition</ns0:DVALUE>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT dkey="en_US">
+						<ns0:DVALUE xsi:type="unicode">Precondition</ns0:DVALUE>
+					</ns0:ELEMENT>
+				</ns0:MULTILANGDATA>
+				<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+			</ns0:ACTION>
+			<ns0:TESTSTEP format-rev="2" id="236446271" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ns0:BLOCK-NAME xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode" />
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:BLOCK-NAME>
+				<ns0:ACTION xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode">1: Run Pre-Condition Steps</ns0:DVALUE>
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:ACTION>
+				<ns0:TESTSTEP format-rev="2" id="238694802" xsi:type="tsPackage">
+					<ns0:PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+						<ns0:VALUE xsi:type="unicode">..\\..\\..\\..\\..\\10_Library\\10_VW_MEB\\00_Global\\VW_MEB_GlobalPreCondition.pkg</ns0:VALUE>
+					</ns0:PACKAGE-REFERENCE>
+					<ns0:PARAM-ASSIGNMENTS />
+					<ns0:ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace" />
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP format-rev="2" id="238694806" xsi:type="tsPackage">
+					<ns0:PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+						<ns0:VALUE xsi:type="unicode">..\\..\\..\\..\\..\\10_Library\\00_Common\\30_HIL_Model\\20_Sensors\\Resolver_Speed.pkg</ns0:VALUE>
+					</ns0:PACKAGE-REFERENCE>
+					<ns0:PARAM-ASSIGNMENTS>
+						<ns0:ASSIGNMENT dkey="Mode">
+							<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="unicode">SET</ns0:VALUE>
+							</ns0:DVALUE>
+						</ns0:ASSIGNMENT>
+						<ns0:ASSIGNMENT dkey="speed">
+							<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="integer">0</ns0:VALUE>
+							</ns0:DVALUE>
+						</ns0:ASSIGNMENT>
+						<ns0:ASSIGNMENT dkey="speedSlope">
+							<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="integer">4000</ns0:VALUE>
+							</ns0:DVALUE>
+						</ns0:ASSIGNMENT>
+						<ns0:ASSIGNMENT dkey="waitToReachSpd">
+							<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="unicode">yes</ns0:VALUE>
+							</ns0:DVALUE>
+						</ns0:ASSIGNMENT>
+					</ns0:PARAM-ASSIGNMENTS>
+					<ns0:ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace" />
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP format-rev="2" id="238694823" xsi:type="tsPackage">
+					<ns0:PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+						<ns0:VALUE xsi:type="unicode">..\\..\\..\\..\\..\\10_Library\\00_Common\\110_Misc\\Connect_Appl_Tool.pkg</ns0:VALUE>
+					</ns0:PACKAGE-REFERENCE>
+					<ns0:PARAM-ASSIGNMENTS>
+						<ns0:ASSIGNMENT dkey="ApplTool">
+							<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="unicode">CANAPE</ns0:VALUE>
+							</ns0:DVALUE>
+						</ns0:ASSIGNMENT>
+						<ns0:ASSIGNMENT dkey="Connection">
+							<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="unicode">START</ns0:VALUE>
+							</ns0:DVALUE>
+						</ns0:ASSIGNMENT>
+					</ns0:PARAM-ASSIGNMENTS>
+					<ns0:ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace" />
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238158061" name="TsStartTrace" xsi:type="utility-9308d99e-50ac-11dc-8fe5-001143176a1c">
+					<ns0:NAME xsi:type="unicode">A2l</ns0:NAME>
+					<ns0:RECORDING-GROUP-REF-BY-UUID>0a345070784411e8aa9a14abc584c8a4</ns0:RECORDING-GROUP-REF-BY-UUID>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238158064" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<ns0:TIME format-rev="1" xsi:type="valueBaseExpression">
+						<ns0:VALUE xsi:type="integer">500</ns0:VALUE>
+					</ns0:TIME>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238158068" name="TsStartTrace" xsi:type="utility-9308d99e-50ac-11dc-8fe5-001143176a1c">
+					<ns0:NAME xsi:type="unicode">CANape</ns0:NAME>
+					<ns0:RECORDING-GROUP-REF-BY-UUID>78bba6a1997411e8aa073c18a00d9078</ns0:RECORDING-GROUP-REF-BY-UUID>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238158071" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<ns0:TIME format-rev="1" xsi:type="valueBaseExpression">
+						<ns0:VALUE xsi:type="integer">500</ns0:VALUE>
+					</ns0:TIME>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238158075" name="TsStartTrace" xsi:type="utility-9308d99e-50ac-11dc-8fe5-001143176a1c">
+					<ns0:NAME xsi:type="unicode" />
+					<ns0:RECORDING-GROUP-REF-BY-UUID>edd6ec8fac4011e887c514abc584c8a4</ns0:RECORDING-GROUP-REF-BY-UUID>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238158078" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<ns0:TIME format-rev="1" xsi:type="valueBaseExpression">
+						<ns0:VALUE xsi:type="integer">500</ns0:VALUE>
+					</ns0:TIME>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238158082" name="TsStartTrace" xsi:type="utility-9308d99e-50ac-11dc-8fe5-001143176a1c">
+					<ns0:NAME xsi:type="unicode" />
+					<ns0:RECORDING-GROUP-REF-BY-UUID>caadc1aebfde11e881e900a0c6000014</ns0:RECORDING-GROUP-REF-BY-UUID>
+				</ns0:TESTSTEP>
+			</ns0:TESTSTEP>
+		</ns0:TESTSTEP>
+		<ns0:TESTSTEP format-rev="2" id="236446275" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<ns0:BLOCK-NAME xsi:type="I18NItem">
+				<ns0:MULTILANGDATA>
+					<ns0:ELEMENT dkey="en_US">
+						<ns0:DVALUE xsi:type="unicode" />
+					</ns0:ELEMENT>
+				</ns0:MULTILANGDATA>
+				<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+			</ns0:BLOCK-NAME>
+			<ns0:ACTION xsi:type="I18NItem">
+				<ns0:MULTILANGDATA>
+					<ns0:ELEMENT dkey="en_US">
+						<ns0:DVALUE xsi:type="unicode">Action</ns0:DVALUE>
+					</ns0:ELEMENT>
+				</ns0:MULTILANGDATA>
+				<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+			</ns0:ACTION>
+			<ns0:TESTSTEP format-rev="2" id="238697586" xsi:type="tsPackage">
+				<ns0:PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+					<ns0:VALUE xsi:type="unicode">..\\..\\..\\..\\..\\10_Library\\00_Common\\30_HIL_Model\\20_Sensors\\Resolver_Speed.pkg</ns0:VALUE>
+				</ns0:PACKAGE-REFERENCE>
+				<ns0:PARAM-ASSIGNMENTS>
+					<ns0:ASSIGNMENT dkey="Mode">
+						<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="unicode">SET</ns0:VALUE>
+						</ns0:DVALUE>
+					</ns0:ASSIGNMENT>
+					<ns0:ASSIGNMENT dkey="speed">
+						<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="integer">500</ns0:VALUE>
+						</ns0:DVALUE>
+					</ns0:ASSIGNMENT>
+					<ns0:ASSIGNMENT dkey="speedSlope">
+						<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="integer">4000</ns0:VALUE>
+						</ns0:DVALUE>
+					</ns0:ASSIGNMENT>
+					<ns0:ASSIGNMENT dkey="waitToReachSpd">
+						<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="unicode">yes</ns0:VALUE>
+						</ns0:DVALUE>
+					</ns0:ASSIGNMENT>
+				</ns0:PARAM-ASSIGNMENTS>
+				<ns0:ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace" />
+			</ns0:TESTSTEP>
+			<ns0:TESTSTEP format-rev="2" id="236446277" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ns0:BLOCK-NAME xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode" />
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:BLOCK-NAME>
+				<ns0:ACTION xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode">2: Set Var [x1] by [x2] using XCP [x3]</ns0:DVALUE>
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:ACTION>
+				<ns0:TESTSTEP id="238158993" xsi:type="tsWrite">
+					<ns0:MAPPING-REF xsi:type="unicode">GenericECU/SWIT_testHookNo</ns0:MAPPING-REF>
+					<ns0:VALUE xsi:type="expressionValue">
+						<ns0:DATA xsi:type="varBaseExpression">
+							<ns0:NAME xsi:type="unicode">TestHookNumbervalue</ns0:NAME>
+						</ns0:DATA>
+					</ns0:VALUE>
+					<ns0:METRIC format-rev="1" xsi:type="metricInfo">
+						<ns0:Z-UNIT xsi:type="unicode">u_none</ns0:Z-UNIT>
+						<ns0:VALUE-TYPE xsi:type="unicode">PHYS</ns0:VALUE-TYPE>
+						<ns0:DATA-TYPE xsi:type="string">VALUE</ns0:DATA-TYPE>
+					</ns0:METRIC>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="236525498" xsi:type="tsRead">
+					<ns0:MAPPING-REF xsi:type="unicode">GenericECU/SWIT_testHookNo</ns0:MAPPING-REF>
+					<ns0:EXPECTATION xsi:type="finallyTrueOption">
+						<ns0:EXPRESSION xsi:type="builtNumericExpression">
+							<ns0:RELATION xsi:type="unicode">==</ns0:RELATION>
+							<ns0:VALUE xsi:type="varBaseExpression">
+								<ns0:NAME xsi:type="unicode">TestHookNumbervalue</ns0:NAME>
+							</ns0:VALUE>
+						</ns0:EXPRESSION>
+						<ns0:TIME format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="integer">1000</ns0:VALUE>
+						</ns0:TIME>
+					</ns0:EXPECTATION>
+					<ns0:METRIC format-rev="1" xsi:type="metricInfo">
+						<ns0:Z-UNIT xsi:type="unicode">u_none</ns0:Z-UNIT>
+						<ns0:VALUE-TYPE xsi:type="unicode">PHYS</ns0:VALUE-TYPE>
+						<ns0:DATA-TYPE xsi:type="string">VALUE</ns0:DATA-TYPE>
+					</ns0:METRIC>
+				</ns0:TESTSTEP>
+			</ns0:TESTSTEP>
+			<ns0:TESTSTEP format-rev="2" id="236446287" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ns0:BLOCK-NAME xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode" />
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:BLOCK-NAME>
+				<ns0:ACTION xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode">4: Set signal [x1] on can bus using canoe with physical Value [x2]</ns0:DVALUE>
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:ACTION>
+				<ns0:TESTSTEP id="238159121" xsi:type="tsWrite">
+					<ns0:MAPPING-REF xsi:type="unicode">BMS_IstModus_RBS</ns0:MAPPING-REF>
+					<ns0:VALUE xsi:type="expressionValue">
+						<ns0:DATA xsi:type="varBaseExpression">
+							<ns0:NAME xsi:type="unicode">Phys_value</ns0:NAME>
+						</ns0:DATA>
+					</ns0:VALUE>
+					<ns0:METRIC format-rev="1" xsi:type="metricInfo">
+						<ns0:VALUE-TYPE xsi:type="unicode">PHYS</ns0:VALUE-TYPE>
+						<ns0:DATA-TYPE xsi:type="string">VALUE</ns0:DATA-TYPE>
+					</ns0:METRIC>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238159127" xsi:type="tsRead">
+					<ns0:MAPPING-REF xsi:type="unicode">BMS_IstModus</ns0:MAPPING-REF>
+					<ns0:EXPECTATION xsi:type="finallyTrueOption">
+						<ns0:EXPRESSION xsi:type="builtNumericExpression">
+							<ns0:RELATION xsi:type="unicode">==</ns0:RELATION>
+							<ns0:VALUE xsi:type="varBaseExpression">
+								<ns0:NAME xsi:type="unicode">Phys_value</ns0:NAME>
+							</ns0:VALUE>
+						</ns0:EXPRESSION>
+						<ns0:TIME format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="integer">1000</ns0:VALUE>
+						</ns0:TIME>
+					</ns0:EXPECTATION>
+					<ns0:METRIC format-rev="1" xsi:type="metricInfo">
+						<ns0:VALUE-TYPE xsi:type="unicode">PHYS</ns0:VALUE-TYPE>
+						<ns0:DATA-TYPE xsi:type="string">VALUE</ns0:DATA-TYPE>
+					</ns0:METRIC>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP format-rev="2" id="238155387" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<ns0:BLOCK-NAME xsi:type="I18NItem">
+						<ns0:MULTILANGDATA>
+							<ns0:ELEMENT dkey="en_US">
+								<ns0:DVALUE xsi:type="unicode" />
+							</ns0:ELEMENT>
+						</ns0:MULTILANGDATA>
+						<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+					</ns0:BLOCK-NAME>
+					<ns0:ACTION xsi:type="I18NItem">
+						<ns0:MULTILANGDATA>
+							<ns0:ELEMENT dkey="en_US">
+								<ns0:DVALUE xsi:type="unicode">3: Set Var [x1] by [x2] using XCP [x3]</ns0:DVALUE>
+							</ns0:ELEMENT>
+						</ns0:MULTILANGDATA>
+						<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+					</ns0:ACTION>
+					<ns0:TESTSTEP id="238159028" xsi:type="tsWrite">
+						<ns0:MAPPING-REF xsi:type="unicode">GenericECU/SWIT_Comm_activationFlag</ns0:MAPPING-REF>
+						<ns0:VALUE xsi:type="expressionValue">
+							<ns0:DATA format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="integer">1</ns0:VALUE>
+							</ns0:DATA>
+						</ns0:VALUE>
+						<ns0:METRIC format-rev="1" xsi:type="metricInfo">
+							<ns0:Z-UNIT xsi:type="unicode">u_none</ns0:Z-UNIT>
+							<ns0:VALUE-TYPE xsi:type="unicode">PHYS</ns0:VALUE-TYPE>
+							<ns0:DATA-TYPE xsi:type="string">VALUE</ns0:DATA-TYPE>
+						</ns0:METRIC>
+					</ns0:TESTSTEP>
+				</ns0:TESTSTEP>
+			</ns0:TESTSTEP>
+			<ns0:TESTSTEP format-rev="2" id="236446339" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ns0:BLOCK-NAME xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode" />
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:BLOCK-NAME>
+				<ns0:ACTION xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode">12: Wait [x1] ms</ns0:DVALUE>
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:ACTION>
+				<ns0:EXPECTATION-VALUE xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode">Check variable [x1] with [x2] value [x3]</ns0:DVALUE>
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:EXPECTATION-VALUE>
+				<ns0:TESTSTEP id="236446341" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<ns0:TIME format-rev="1" xsi:type="valueBaseExpression">
+						<ns0:VALUE xsi:type="integer">10</ns0:VALUE>
+					</ns0:TIME>
+				</ns0:TESTSTEP>
+			</ns0:TESTSTEP>
+			<ns0:TESTSTEP format-rev="2" id="236446346" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ns0:BLOCK-NAME xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode" />
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:BLOCK-NAME>
+				<ns0:ACTION xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode">13: Set Var [x1] by [x2] using XCP [x3]</ns0:DVALUE>
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:ACTION>
+				<ns0:TESTSTEP id="238159037" xsi:type="tsWrite">
+					<ns0:MAPPING-REF xsi:type="unicode">GenericECU/SWIT_Comm_activationFlag</ns0:MAPPING-REF>
+					<ns0:VALUE xsi:type="expressionValue">
+						<ns0:DATA format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="float">0.0</ns0:VALUE>
+						</ns0:DATA>
+					</ns0:VALUE>
+					<ns0:METRIC format-rev="1" xsi:type="metricInfo">
+						<ns0:Z-UNIT xsi:type="unicode">u_none</ns0:Z-UNIT>
+						<ns0:VALUE-TYPE xsi:type="unicode">PHYS</ns0:VALUE-TYPE>
+						<ns0:DATA-TYPE xsi:type="string">VALUE</ns0:DATA-TYPE>
+					</ns0:METRIC>
+				</ns0:TESTSTEP>
+			</ns0:TESTSTEP>
+		</ns0:TESTSTEP>
+		<ns0:TESTSTEP format-rev="1" id="236446351" name="TsPostcondBlock" xsi:type="utility-0d2ac4dc-1d8f-4182-81d1-a5d5ca74a44f">
+			<ns0:BLOCK-NAME xsi:type="I18NItem">
+				<ns0:MULTILANGDATA>
+					<ns0:ELEMENT dkey="de_DE">
+						<ns0:DVALUE xsi:type="unicode">Postcondition</ns0:DVALUE>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT dkey="en_US">
+						<ns0:DVALUE xsi:type="unicode">Postcondition</ns0:DVALUE>
+					</ns0:ELEMENT>
+				</ns0:MULTILANGDATA>
+				<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+			</ns0:BLOCK-NAME>
+			<ns0:ACTION xsi:type="I18NItem">
+				<ns0:MULTILANGDATA>
+					<ns0:ELEMENT dkey="de_DE">
+						<ns0:DVALUE xsi:type="unicode">Postcondition</ns0:DVALUE>
+					</ns0:ELEMENT>
+					<ns0:ELEMENT dkey="en_US">
+						<ns0:DVALUE xsi:type="unicode">Postcondition</ns0:DVALUE>
+					</ns0:ELEMENT>
+				</ns0:MULTILANGDATA>
+				<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+			</ns0:ACTION>
+			<ns0:EFFECT-TEST-RESULT xsi:type="boolean">False</ns0:EFFECT-TEST-RESULT>
+			<ns0:TESTSTEP format-rev="2" id="236446353" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<ns0:BLOCK-NAME xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode" />
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:BLOCK-NAME>
+				<ns0:ACTION xsi:type="I18NItem">
+					<ns0:MULTILANGDATA>
+						<ns0:ELEMENT dkey="en_US">
+							<ns0:DVALUE xsi:type="unicode">14: Run Post-Condition Steps</ns0:DVALUE>
+						</ns0:ELEMENT>
+					</ns0:MULTILANGDATA>
+					<ns0:INITIAL-LANGUAGE xsi:type="unicode">en_US</ns0:INITIAL-LANGUAGE>
+				</ns0:ACTION>
+				<ns0:TESTSTEP format-rev="2" id="236446530" xsi:type="tsPackage">
+					<ns0:PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+						<ns0:VALUE xsi:type="unicode">..\\..\\..\\..\\..\\10_Library\\10_VW_MEB\\00_Global\\VW_MEB_GlobalPostCondition.pkg</ns0:VALUE>
+					</ns0:PACKAGE-REFERENCE>
+					<ns0:PARAM-ASSIGNMENTS />
+					<ns0:ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace" />
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238158155" name="TsStopTrace" xsi:type="utility-d12f5791-50ac-11dc-8eb4-001143176a1c">
+					<ns0:NAME xsi:type="unicode">Stop CANape</ns0:NAME>
+					<ns0:RECORDING-GROUP-REF-BY-UUID>78bba6a1997411e8aa073c18a00d9078</ns0:RECORDING-GROUP-REF-BY-UUID>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238158159" name="TsStopTrace" xsi:type="utility-d12f5791-50ac-11dc-8eb4-001143176a1c">
+					<ns0:NAME xsi:type="unicode">Stop A2l</ns0:NAME>
+					<ns0:RECORDING-GROUP-REF-BY-UUID>0a345070784411e8aa9a14abc584c8a4</ns0:RECORDING-GROUP-REF-BY-UUID>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238158163" name="TsStopTrace" xsi:type="utility-d12f5791-50ac-11dc-8eb4-001143176a1c">
+					<ns0:NAME xsi:type="unicode" />
+					<ns0:RECORDING-GROUP-REF-BY-UUID>edd6ec8fac4011e887c514abc584c8a4</ns0:RECORDING-GROUP-REF-BY-UUID>
+				</ns0:TESTSTEP>
+				<ns0:TESTSTEP id="238158167" name="TsStopTrace" xsi:type="utility-d12f5791-50ac-11dc-8eb4-001143176a1c">
+					<ns0:NAME xsi:type="unicode" />
+					<ns0:RECORDING-GROUP-REF-BY-UUID>caadc1aebfde11e881e900a0c6000014</ns0:RECORDING-GROUP-REF-BY-UUID>
+				</ns0:TESTSTEP>
+			</ns0:TESTSTEP>
+		</ns0:TESTSTEP>
+	</ns0:TESTSTEPS>
+	<ns0:TRACE-ANALYSES format-rev="1" xsi:type="traceAnalyses">
+		<ns0:TRACE-ANALYSIS format-rev="3" uuid="b07fa751cbc211e8895f14abc584c8a4" xsi:type="traceAnalysis">
+			<ns0:NAME xsi:type="unicode">Synchronisation</ns0:NAME>
+			<ns0:ANALYSISITEM format-rev="1" uuid="b07fce61cbc211e8937f14abc584c8a4" xsi:type="episode">
+				<ns0:NAME xsi:type="unicode">New episode</ns0:NAME>
+				<ns0:ANALYSISITEM format-rev="2" poolRev="4" uuid="b07fce62cbc211e8b96214abc584c8a4" xsi:type="referencingTraceStep">
+					<ns0:NAME xsi:type="unicode">Synchronization</ns0:NAME>
+					<ns0:ANALYSISITEM format-rev="3" uuid="b07fce63cbc211e8a93c14abc584c8a4" xsi:type="plotItem">
+						<ns0:NAME xsi:type="unicode">Plot</ns0:NAME>
+						<ns0:SUB-PLOTS>
+							<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<ns0:TYPE xsi:type="string">common</ns0:TYPE>
+								<ns0:ENTITIES>
+									<ns0:ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+										<ns0:NAME xsi:type="unicode">TOSYNC</ns0:NAME>
+										<ns0:AXIS xsi:type="integer">0</ns0:AXIS>
+									</ns0:ENTITY>
+									<ns0:ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+										<ns0:NAME xsi:type="unicode">REFERENCE</ns0:NAME>
+										<ns0:AXIS xsi:type="integer">0</ns0:AXIS>
+									</ns0:ENTITY>
+								</ns0:ENTITIES>
+								<ns0:AXES>
+									<ns0:AXIS xsi:type="plotAxis" />
+								</ns0:AXES>
+							</ns0:SUB-PLOT>
+							<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<ns0:TYPE xsi:type="string">separate</ns0:TYPE>
+								<ns0:ENTITIES />
+								<ns0:AXES>
+									<ns0:AXIS xsi:type="plotAxis" />
+								</ns0:AXES>
+							</ns0:SUB-PLOT>
+							<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<ns0:TYPE xsi:type="string">common</ns0:TYPE>
+								<ns0:ENTITIES />
+								<ns0:AXES />
+							</ns0:SUB-PLOT>
+						</ns0:SUB-PLOTS>
+						<ns0:SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<ns0:CONDITION xsi:type="unicode">NONE</ns0:CONDITION>
+							<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+							</ns0:MAX-NUMBER>
+							<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+							</ns0:EXPAND-XLIMITS-LEFT>
+							<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+							</ns0:EXPAND-XLIMITS-RIGHT>
+						</ns0:SUB-CONFIG-OVERVIEW>
+						<ns0:SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<ns0:CONDITION xsi:type="unicode">NEVER</ns0:CONDITION>
+							<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+							</ns0:MAX-NUMBER>
+							<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+							</ns0:EXPAND-XLIMITS-LEFT>
+							<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+							</ns0:EXPAND-XLIMITS-RIGHT>
+						</ns0:SUB-CONFIG-PARENT-CONTEXT>
+						<ns0:SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<ns0:CONDITION xsi:type="unicode">NEVER</ns0:CONDITION>
+							<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+							</ns0:MAX-NUMBER>
+							<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+							</ns0:EXPAND-XLIMITS-LEFT>
+							<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+								<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+							</ns0:EXPAND-XLIMITS-RIGHT>
+						</ns0:SUB-CONFIG-DETAILS>
+						<ns0:SIGNAL-NAME-TYPE xsi:type="string">generic</ns0:SIGNAL-NAME-TYPE>
+						<ns0:LEGEND-LOCATION xsi:type="integer">11</ns0:LEGEND-LOCATION>
+					</ns0:ANALYSISITEM>
+					<ns0:SIGNAL-BINDING xsi:type="signalBinding">
+						<ns0:PARAMETER dkey="REFERENCE">
+							<ns0:DVALUE format-rev="1" xsi:type="signalParameter">
+								<ns0:REF-SIGNAL-NAME xsi:type="unicode">CANape_Signal</ns0:REF-SIGNAL-NAME>
+							</ns0:DVALUE>
+						</ns0:PARAMETER>
+						<ns0:PARAMETER dkey="TOSYNC">
+							<ns0:DVALUE format-rev="1" xsi:type="signalParameter">
+								<ns0:REF-SIGNAL-NAME xsi:type="unicode">INCA_Signal</ns0:REF-SIGNAL-NAME>
+							</ns0:DVALUE>
+						</ns0:PARAMETER>
+					</ns0:SIGNAL-BINDING>
+					<ns0:PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+						<ns0:PARAM-ASSIGNMENTS>
+							<ns0:ASSIGNMENT dkey="calculatedOffset">
+								<ns0:DVALUE xsi:type="varBaseExpression">
+									<ns0:NAME xsi:type="unicode">offset</ns0:NAME>
+								</ns0:DVALUE>
+							</ns0:ASSIGNMENT>
+							<ns0:ASSIGNMENT dkey="ignoreAbove">
+								<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="integer">50</ns0:VALUE>
+								</ns0:DVALUE>
+							</ns0:ASSIGNMENT>
+							<ns0:ASSIGNMENT dkey="ignoreBelow">
+								<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="integer">20</ns0:VALUE>
+								</ns0:DVALUE>
+							</ns0:ASSIGNMENT>
+						</ns0:PARAM-ASSIGNMENTS>
+					</ns0:PARAM-ASSIGNMENTS>
+					<ns0:REPORT-CONFIG xsi:type="trcpReportConfig">
+						<ns0:MAX-SPOTS xsi:type="integer">100</ns0:MAX-SPOTS>
+						<ns0:MIN-DELTA xsi:type="float">0.0</ns0:MIN-DELTA>
+					</ns0:REPORT-CONFIG>
+					<ns0:PROTOTYPE-ID xsi:type="unicode">00_Common\Misc\Synchronization</ns0:PROTOTYPE-ID>
+				</ns0:ANALYSISITEM>
+			</ns0:ANALYSISITEM>
+			<ns0:ANALYSISITEM format-rev="1" uuid="b07fce64cbc211e88ce714abc584c8a4" xsi:type="episode">
+				<ns0:NAME xsi:type="unicode">New episode</ns0:NAME>
+				<ns0:ANALYSISITEM format-rev="1" uuid="b07fce65cbc211e8a35914abc584c8a4" xsi:type="calculation">
+					<ns0:FORMULA xsi:type="unicode">user.HandOverParameters.Write(offset) or CANape_Signal</ns0:FORMULA>
+					<ns0:REPORT-CONFIG xsi:type="trcpReportConfig">
+						<ns0:MAX-SPOTS xsi:type="integer">100</ns0:MAX-SPOTS>
+						<ns0:MIN-DELTA xsi:type="float">0.0</ns0:MIN-DELTA>
+					</ns0:REPORT-CONFIG>
+				</ns0:ANALYSISITEM>
+			</ns0:ANALYSISITEM>
+			<ns0:SYNCHRONISATION-CONFIG xsi:type="syncConfig" />
+			<ns0:SYNCHRONISATION-ACTIVATED xsi:type="boolean">False</ns0:SYNCHRONISATION-ACTIVATED>
+			<ns0:TRACE-MERGE-FILEPATH format-rev="1" xsi:type="valueBaseExpression">
+				<ns0:VALUE xsi:type="unicode" />
+			</ns0:TRACE-MERGE-FILEPATH>
+			<ns0:VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<ns0:VIRTUAL-SIGNALS>
+					<ns0:VIRTUAL-SIGNAL uuid="e88a994f997911e89e003c18a00d9078" xsi:type="virtualSessionSignal">
+						<ns0:NAME xsi:type="unicode">INCA_Signal</ns0:NAME>
+						<ns0:SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<ns0:KEY xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms</ns0:KEY>
+							<ns0:SOURCE-TYPE xsi:type="string">RECORDING-GROUP</ns0:SOURCE-TYPE>
+							<ns0:SOURCE-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</ns0:SOURCE-REF>
+						</ns0:SIGNAL-FOR-ANALYSIS>
+						<ns0:EVENT-TYPE xsi:type="string">RAW</ns0:EVENT-TYPE>
+					</ns0:VIRTUAL-SIGNAL>
+					<ns0:VIRTUAL-SIGNAL uuid="e8e05a70997911e88c3d3c18a00d9078" xsi:type="virtualSessionSignal">
+						<ns0:NAME xsi:type="unicode">CANape_Signal</ns0:NAME>
+						<ns0:SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<ns0:KEY xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms_Canape</ns0:KEY>
+							<ns0:SOURCE-TYPE xsi:type="string">RECORDING-GROUP</ns0:SOURCE-TYPE>
+							<ns0:SOURCE-REF xsi:type="string">78bba6a1997411e8aa073c18a00d9078</ns0:SOURCE-REF>
+						</ns0:SIGNAL-FOR-ANALYSIS>
+						<ns0:EVENT-TYPE xsi:type="string">RAW</ns0:EVENT-TYPE>
+					</ns0:VIRTUAL-SIGNAL>
+				</ns0:VIRTUAL-SIGNALS>
+			</ns0:VIRTUAL-SIGNALS-MANAGER>
+		</ns0:TRACE-ANALYSIS>
+		<ns0:TRACE-ANALYSIS format-rev="3" uuid="b5bf098fcbc211e88d9814abc584c8a4" xsi:type="traceAnalysis">
+			<ns0:NAME xsi:type="unicode">Trace analysis 1</ns0:NAME>
+			<ns0:ANALYSISITEM format-rev="1" uuid="b5bf0990cbc211e8826214abc584c8a4" xsi:type="episode">
+				<ns0:NAME xsi:type="unicode">Show Synchronization</ns0:NAME>
+				<ns0:ANALYSISITEM format-rev="3" uuid="b5bf0991cbc211e8805d14abc584c8a4" xsi:type="plotItem">
+					<ns0:NAME xsi:type="unicode">Plot</ns0:NAME>
+					<ns0:SUB-PLOTS>
+						<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<ns0:TYPE xsi:type="string">common</ns0:TYPE>
+							<ns0:ENTITIES>
+								<ns0:ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<ns0:NAME xsi:type="unicode">A2LSignal_CANape_Sync</ns0:NAME>
+									<ns0:AXIS xsi:type="integer">0</ns0:AXIS>
+								</ns0:ENTITY>
+								<ns0:ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<ns0:NAME xsi:type="unicode">A2LSignal_INCA_Sync</ns0:NAME>
+									<ns0:AXIS xsi:type="integer">0</ns0:AXIS>
+								</ns0:ENTITY>
+							</ns0:ENTITIES>
+							<ns0:AXES>
+								<ns0:AXIS xsi:type="plotAxis" />
+							</ns0:AXES>
+						</ns0:SUB-PLOT>
+						<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<ns0:TYPE xsi:type="string">separate</ns0:TYPE>
+							<ns0:ENTITIES />
+							<ns0:AXES>
+								<ns0:AXIS xsi:type="plotAxis" />
+							</ns0:AXES>
+						</ns0:SUB-PLOT>
+						<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<ns0:TYPE xsi:type="string">common</ns0:TYPE>
+							<ns0:ENTITIES />
+							<ns0:AXES />
+						</ns0:SUB-PLOT>
+					</ns0:SUB-PLOTS>
+					<ns0:SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+						<ns0:CONDITION xsi:type="unicode">NONE</ns0:CONDITION>
+						<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+						</ns0:MAX-NUMBER>
+						<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+						</ns0:EXPAND-XLIMITS-LEFT>
+						<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+						</ns0:EXPAND-XLIMITS-RIGHT>
+					</ns0:SUB-CONFIG-OVERVIEW>
+					<ns0:SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+						<ns0:CONDITION xsi:type="unicode">NEVER</ns0:CONDITION>
+						<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+						</ns0:MAX-NUMBER>
+						<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+						</ns0:EXPAND-XLIMITS-LEFT>
+						<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+						</ns0:EXPAND-XLIMITS-RIGHT>
+					</ns0:SUB-CONFIG-PARENT-CONTEXT>
+					<ns0:SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+						<ns0:CONDITION xsi:type="unicode">NEVER</ns0:CONDITION>
+						<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+						</ns0:MAX-NUMBER>
+						<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+						</ns0:EXPAND-XLIMITS-LEFT>
+						<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+							<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+						</ns0:EXPAND-XLIMITS-RIGHT>
+					</ns0:SUB-CONFIG-DETAILS>
+					<ns0:SIGNAL-NAME-TYPE xsi:type="string">generic</ns0:SIGNAL-NAME-TYPE>
+					<ns0:LEGEND-LOCATION xsi:type="integer">11</ns0:LEGEND-LOCATION>
+				</ns0:ANALYSISITEM>
+			</ns0:ANALYSISITEM>
+			<ns0:ANALYSISITEM format-rev="1" uuid="b5bf0992cbc211e8a89d14abc584c8a4" xsi:type="episode">
+				<ns0:NAME xsi:type="unicode">Raw</ns0:NAME>
+				<ns0:ANALYSISITEM uuid="b5bf0993cbc211e8897d14abc584c8a4" xsi:type="analysisBlock">
+					<ns0:NAME xsi:type="unicode">Check CANSignal</ns0:NAME>
+					<ns0:ANALYSISITEM format-rev="2" poolRev="4" uuid="b5bf0994cbc211e885c614abc584c8a4" xsi:type="referencingTraceStep">
+						<ns0:NAME xsi:type="unicode">TwoSignalsTimingReaction</ns0:NAME>
+						<ns0:ANALYSISITEM format-rev="3" uuid="b5bf0995cbc211e8841d14abc584c8a4" xsi:type="plotItem">
+							<ns0:NAME xsi:type="unicode">Plot</ns0:NAME>
+							<ns0:SUB-PLOTS>
+								<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<ns0:TYPE xsi:type="string">common</ns0:TYPE>
+									<ns0:ENTITIES>
+										<ns0:ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<ns0:NAME xsi:type="unicode">Signal2</ns0:NAME>
+											<ns0:AXIS xsi:type="integer">0</ns0:AXIS>
+										</ns0:ENTITY>
+										<ns0:ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<ns0:NAME xsi:type="unicode">Signal1</ns0:NAME>
+											<ns0:AXIS xsi:type="integer">0</ns0:AXIS>
+										</ns0:ENTITY>
+									</ns0:ENTITIES>
+									<ns0:AXES>
+										<ns0:AXIS xsi:type="plotAxis" />
+									</ns0:AXES>
+								</ns0:SUB-PLOT>
+								<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<ns0:TYPE xsi:type="string">separate</ns0:TYPE>
+									<ns0:ENTITIES />
+									<ns0:AXES>
+										<ns0:AXIS xsi:type="plotAxis" />
+									</ns0:AXES>
+								</ns0:SUB-PLOT>
+								<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<ns0:TYPE xsi:type="string">common</ns0:TYPE>
+									<ns0:ENTITIES />
+									<ns0:AXES />
+								</ns0:SUB-PLOT>
+							</ns0:SUB-PLOTS>
+							<ns0:SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+								<ns0:CONDITION xsi:type="unicode">NONE</ns0:CONDITION>
+								<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+								</ns0:MAX-NUMBER>
+								<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-LEFT>
+								<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-RIGHT>
+							</ns0:SUB-CONFIG-OVERVIEW>
+							<ns0:SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+								<ns0:CONDITION xsi:type="unicode">NEVER</ns0:CONDITION>
+								<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+								</ns0:MAX-NUMBER>
+								<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-LEFT>
+								<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-RIGHT>
+							</ns0:SUB-CONFIG-PARENT-CONTEXT>
+							<ns0:SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+								<ns0:CONDITION xsi:type="unicode">NONE</ns0:CONDITION>
+								<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+								</ns0:MAX-NUMBER>
+								<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-LEFT>
+								<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-RIGHT>
+							</ns0:SUB-CONFIG-DETAILS>
+							<ns0:SIGNAL-NAME-TYPE xsi:type="string">generic</ns0:SIGNAL-NAME-TYPE>
+							<ns0:LEGEND-LOCATION xsi:type="integer">11</ns0:LEGEND-LOCATION>
+						</ns0:ANALYSISITEM>
+						<ns0:SIGNAL-BINDING xsi:type="signalBinding">
+							<ns0:PARAMETER dkey="Signal1">
+								<ns0:DVALUE format-rev="1" xsi:type="signalParameter">
+									<ns0:REF-SIGNAL-NAME xsi:type="unicode">CANSignal</ns0:REF-SIGNAL-NAME>
+								</ns0:DVALUE>
+							</ns0:PARAMETER>
+							<ns0:PARAMETER dkey="Signal2">
+								<ns0:DVALUE format-rev="1" xsi:type="signalParameter">
+									<ns0:REF-SIGNAL-NAME xsi:type="unicode">A2LSignal</ns0:REF-SIGNAL-NAME>
+								</ns0:DVALUE>
+							</ns0:PARAMETER>
+						</ns0:SIGNAL-BINDING>
+						<ns0:PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+							<ns0:PARAM-ASSIGNMENTS>
+								<ns0:ASSIGNMENT dkey="AllowFailedInstances">
+									<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression" />
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="ExpectationValue1">
+									<ns0:DVALUE xsi:type="varBaseExpression">
+										<ns0:NAME xsi:type="unicode">Phys_value</ns0:NAME>
+									</ns0:DVALUE>
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="ExpectationValue2">
+									<ns0:DVALUE xsi:type="varBaseExpression">
+										<ns0:NAME xsi:type="unicode">Raw_Value</ns0:NAME>
+									</ns0:DVALUE>
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="MaxParallelInstances">
+									<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression" />
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="MinMaxSuccessfulInstances">
+									<ns0:DVALUE xsi:type="listOrTupleBaseExpression">
+										<ns0:IS-LIST xsi:type="boolean">False</ns0:IS-LIST>
+										<ns0:EXPRESSION-LIST>
+											<ns0:BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<ns0:VALUE xsi:type="integer">1</ns0:VALUE>
+											</ns0:BASE-EXPRESSION>
+											<ns0:BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression" />
+										</ns0:EXPRESSION-LIST>
+									</ns0:DVALUE>
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="maxTime">
+									<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+										<ns0:VALUE xsi:type="float">5.5555</ns0:VALUE>
+									</ns0:DVALUE>
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="minTime">
+									<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+										<ns0:VALUE xsi:type="integer">0</ns0:VALUE>
+									</ns0:DVALUE>
+								</ns0:ASSIGNMENT>
+							</ns0:PARAM-ASSIGNMENTS>
+						</ns0:PARAM-ASSIGNMENTS>
+						<ns0:REPORT-CONFIG xsi:type="trcpReportConfig">
+							<ns0:MAX-SPOTS xsi:type="integer">100</ns0:MAX-SPOTS>
+							<ns0:MIN-DELTA xsi:type="float">0.0</ns0:MIN-DELTA>
+						</ns0:REPORT-CONFIG>
+						<ns0:PROTOTYPE-ID xsi:type="unicode">10_VW_MEB\Comm_SWIT\TwoSignalsTimingReaction</ns0:PROTOTYPE-ID>
+					</ns0:ANALYSISITEM>
+					<ns0:ANALYSISITEM format-rev="2" poolRev="4" uuid="8ce3fb9ecbc411e8827f14abc584c8a4" xsi:type="referencingTraceStep">
+						<ns0:NAME xsi:type="unicode">TwoSignalsTimingReaction</ns0:NAME>
+						<ns0:ANALYSISITEM format-rev="3" uuid="8ce3fb9fcbc411e8862c14abc584c8a4" xsi:type="plotItem">
+							<ns0:NAME xsi:type="unicode">Plot</ns0:NAME>
+							<ns0:SUB-PLOTS>
+								<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<ns0:TYPE xsi:type="string">common</ns0:TYPE>
+									<ns0:ENTITIES>
+										<ns0:ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<ns0:NAME xsi:type="unicode">Signal2</ns0:NAME>
+											<ns0:AXIS xsi:type="integer">0</ns0:AXIS>
+										</ns0:ENTITY>
+										<ns0:ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<ns0:NAME xsi:type="unicode">Signal1</ns0:NAME>
+											<ns0:AXIS xsi:type="integer">0</ns0:AXIS>
+										</ns0:ENTITY>
+									</ns0:ENTITIES>
+									<ns0:AXES>
+										<ns0:AXIS xsi:type="plotAxis" />
+									</ns0:AXES>
+								</ns0:SUB-PLOT>
+								<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<ns0:TYPE xsi:type="string">separate</ns0:TYPE>
+									<ns0:ENTITIES />
+									<ns0:AXES>
+										<ns0:AXIS xsi:type="plotAxis" />
+									</ns0:AXES>
+								</ns0:SUB-PLOT>
+								<ns0:SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<ns0:TYPE xsi:type="string">common</ns0:TYPE>
+									<ns0:ENTITIES />
+									<ns0:AXES />
+								</ns0:SUB-PLOT>
+							</ns0:SUB-PLOTS>
+							<ns0:SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+								<ns0:CONDITION xsi:type="unicode">NONE</ns0:CONDITION>
+								<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+								</ns0:MAX-NUMBER>
+								<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-LEFT>
+								<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-RIGHT>
+							</ns0:SUB-CONFIG-OVERVIEW>
+							<ns0:SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+								<ns0:CONDITION xsi:type="unicode">NEVER</ns0:CONDITION>
+								<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+								</ns0:MAX-NUMBER>
+								<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-LEFT>
+								<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-RIGHT>
+							</ns0:SUB-CONFIG-PARENT-CONTEXT>
+							<ns0:SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+								<ns0:CONDITION xsi:type="unicode">NONE</ns0:CONDITION>
+								<ns0:MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="integer">5</ns0:VALUE>
+								</ns0:MAX-NUMBER>
+								<ns0:EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-LEFT>
+								<ns0:EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<ns0:VALUE xsi:type="float">0.5</ns0:VALUE>
+								</ns0:EXPAND-XLIMITS-RIGHT>
+							</ns0:SUB-CONFIG-DETAILS>
+							<ns0:SIGNAL-NAME-TYPE xsi:type="string">generic</ns0:SIGNAL-NAME-TYPE>
+							<ns0:LEGEND-LOCATION xsi:type="integer">11</ns0:LEGEND-LOCATION>
+						</ns0:ANALYSISITEM>
+						<ns0:SIGNAL-BINDING xsi:type="signalBinding">
+							<ns0:PARAMETER dkey="Signal1">
+								<ns0:DVALUE format-rev="1" xsi:type="signalParameter">
+									<ns0:REF-SIGNAL-NAME xsi:type="unicode">A2lFlag</ns0:REF-SIGNAL-NAME>
+								</ns0:DVALUE>
+							</ns0:PARAMETER>
+							<ns0:PARAMETER dkey="Signal2">
+								<ns0:DVALUE format-rev="1" xsi:type="signalParameter">
+									<ns0:REF-SIGNAL-NAME xsi:type="unicode">THvariable</ns0:REF-SIGNAL-NAME>
+								</ns0:DVALUE>
+							</ns0:PARAMETER>
+						</ns0:SIGNAL-BINDING>
+						<ns0:PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+							<ns0:PARAM-ASSIGNMENTS>
+								<ns0:ASSIGNMENT dkey="AllowFailedInstances">
+									<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression" />
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="ExpectationValue1">
+									<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+										<ns0:VALUE xsi:type="integer">1</ns0:VALUE>
+									</ns0:DVALUE>
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="ExpectationValue2">
+									<ns0:DVALUE xsi:type="varBaseExpression">
+										<ns0:NAME xsi:type="unicode">Raw_Value</ns0:NAME>
+									</ns0:DVALUE>
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="MaxParallelInstances">
+									<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression" />
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="MinMaxSuccessfulInstances">
+									<ns0:DVALUE xsi:type="listOrTupleBaseExpression">
+										<ns0:IS-LIST xsi:type="boolean">False</ns0:IS-LIST>
+										<ns0:EXPRESSION-LIST>
+											<ns0:BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<ns0:VALUE xsi:type="integer">1</ns0:VALUE>
+											</ns0:BASE-EXPRESSION>
+											<ns0:BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression" />
+										</ns0:EXPRESSION-LIST>
+									</ns0:DVALUE>
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="maxTime">
+									<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+										<ns0:VALUE xsi:type="float">5.5555</ns0:VALUE>
+									</ns0:DVALUE>
+								</ns0:ASSIGNMENT>
+								<ns0:ASSIGNMENT dkey="minTime">
+									<ns0:DVALUE format-rev="1" xsi:type="valueBaseExpression">
+										<ns0:VALUE xsi:type="integer">0</ns0:VALUE>
+									</ns0:DVALUE>
+								</ns0:ASSIGNMENT>
+							</ns0:PARAM-ASSIGNMENTS>
+						</ns0:PARAM-ASSIGNMENTS>
+						<ns0:REPORT-CONFIG xsi:type="trcpReportConfig">
+							<ns0:MAX-SPOTS xsi:type="integer">100</ns0:MAX-SPOTS>
+							<ns0:MIN-DELTA xsi:type="float">0.0</ns0:MIN-DELTA>
+						</ns0:REPORT-CONFIG>
+						<ns0:PROTOTYPE-ID xsi:type="unicode">10_VW_MEB\Comm_SWIT\TwoSignalsTimingReaction</ns0:PROTOTYPE-ID>
+					</ns0:ANALYSISITEM>
+				</ns0:ANALYSISITEM>
+			</ns0:ANALYSISITEM>
+			<ns0:SYNCHRONISATION-CONFIG xsi:type="syncConfig">
+				<ns0:ROOT-GROUP-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</ns0:ROOT-GROUP-REF>
+				<ns0:SYNCHRONISATIONS>
+					<ns0:SYNCHRONISATION format-rev="1" xsi:type="offsetSynchronisation">
+						<ns0:RECORDING-GROUP-REF xsi:type="string">78bba6a1997411e8aa073c18a00d9078</ns0:RECORDING-GROUP-REF>
+						<ns0:MASTER-GROUP-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</ns0:MASTER-GROUP-REF>
+						<ns0:OFFSET xsi:type="functionBaseExpression">
+							<ns0:COMPONENT xsi:type="attributeBaseExpression">
+								<ns0:COMPONENT xsi:type="attributeBaseExpression">
+									<ns0:COMPONENT xsi:type="varBaseExpression">
+										<ns0:NAME xsi:type="unicode">user</ns0:NAME>
+									</ns0:COMPONENT>
+									<ns0:ATTR-NAME xsi:type="string">HandOverParameters</ns0:ATTR-NAME>
+								</ns0:COMPONENT>
+								<ns0:ATTR-NAME xsi:type="string">Read</ns0:ATTR-NAME>
+							</ns0:COMPONENT>
+						</ns0:OFFSET>
+						<ns0:OFFSET-CHECKED xsi:type="boolean">True</ns0:OFFSET-CHECKED>
+					</ns0:SYNCHRONISATION>
+					<ns0:SYNCHRONISATION format-rev="1" xsi:type="offsetSynchronisation">
+						<ns0:RECORDING-GROUP-REF xsi:type="string">caadc1aebfde11e881e900a0c6000014</ns0:RECORDING-GROUP-REF>
+						<ns0:MASTER-GROUP-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</ns0:MASTER-GROUP-REF>
+						<ns0:OFFSET xsi:type="functionBaseExpression">
+							<ns0:COMPONENT xsi:type="attributeBaseExpression">
+								<ns0:COMPONENT xsi:type="attributeBaseExpression">
+									<ns0:COMPONENT xsi:type="varBaseExpression">
+										<ns0:NAME xsi:type="unicode">user</ns0:NAME>
+									</ns0:COMPONENT>
+									<ns0:ATTR-NAME xsi:type="string">HandOverParameters</ns0:ATTR-NAME>
+								</ns0:COMPONENT>
+								<ns0:ATTR-NAME xsi:type="string">Read</ns0:ATTR-NAME>
+							</ns0:COMPONENT>
+						</ns0:OFFSET>
+						<ns0:OFFSET-CHECKED xsi:type="boolean">True</ns0:OFFSET-CHECKED>
+					</ns0:SYNCHRONISATION>
+				</ns0:SYNCHRONISATIONS>
+			</ns0:SYNCHRONISATION-CONFIG>
+			<ns0:SYNCHRONISATION-ACTIVATED xsi:type="boolean">True</ns0:SYNCHRONISATION-ACTIVATED>
+			<ns0:TRACE-MERGE-FILEPATH format-rev="1" xsi:type="valueBaseExpression">
+				<ns0:VALUE xsi:type="unicode" />
+			</ns0:TRACE-MERGE-FILEPATH>
+			<ns0:VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<ns0:VIRTUAL-SIGNALS>
+					<ns0:VIRTUAL-SIGNAL uuid="dc353be1998011e8ba123c18a00d9078" xsi:type="virtualSessionSignal">
+						<ns0:NAME xsi:type="unicode">A2LSignal</ns0:NAME>
+						<ns0:SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<ns0:KEY xsi:type="unicode">SigWr_BMS_IstModus_1ms</ns0:KEY>
+							<ns0:SOURCE-TYPE xsi:type="string">RECORDING-GROUP</ns0:SOURCE-TYPE>
+							<ns0:SOURCE-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</ns0:SOURCE-REF>
+						</ns0:SIGNAL-FOR-ANALYSIS>
+						<ns0:EVENT-TYPE xsi:type="string">PHY</ns0:EVENT-TYPE>
+					</ns0:VIRTUAL-SIGNAL>
+					<ns0:VIRTUAL-SIGNAL uuid="dbd25b61998011e8a9d03c18a00d9078" xsi:type="virtualSessionSignal">
+						<ns0:NAME xsi:type="unicode">CANSignal</ns0:NAME>
+						<ns0:SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<ns0:KEY xsi:type="unicode">BMS_IstModus_canape</ns0:KEY>
+							<ns0:SOURCE-TYPE xsi:type="string">RECORDING-GROUP</ns0:SOURCE-TYPE>
+							<ns0:SOURCE-REF xsi:type="string">caadc1aebfde11e881e900a0c6000014</ns0:SOURCE-REF>
+						</ns0:SIGNAL-FOR-ANALYSIS>
+						<ns0:EVENT-TYPE xsi:type="string">PHY</ns0:EVENT-TYPE>
+					</ns0:VIRTUAL-SIGNAL>
+					<ns0:VIRTUAL-SIGNAL uuid="e60dc361998211e89b373c18a00d9078" xsi:type="virtualSessionSignal">
+						<ns0:NAME xsi:type="unicode">A2LSignal_CANape_Sync</ns0:NAME>
+						<ns0:SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<ns0:KEY xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms_Canape</ns0:KEY>
+							<ns0:SOURCE-TYPE xsi:type="string">RECORDING-GROUP</ns0:SOURCE-TYPE>
+							<ns0:SOURCE-REF xsi:type="string">78bba6a1997411e8aa073c18a00d9078</ns0:SOURCE-REF>
+						</ns0:SIGNAL-FOR-ANALYSIS>
+						<ns0:EVENT-TYPE xsi:type="string">PHY</ns0:EVENT-TYPE>
+					</ns0:VIRTUAL-SIGNAL>
+					<ns0:VIRTUAL-SIGNAL uuid="ffbdb0e1998211e8a8263c18a00d9078" xsi:type="virtualSessionSignal">
+						<ns0:NAME xsi:type="unicode">A2LSignal_INCA_Sync</ns0:NAME>
+						<ns0:SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<ns0:KEY xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms</ns0:KEY>
+							<ns0:SOURCE-TYPE xsi:type="string">RECORDING-GROUP</ns0:SOURCE-TYPE>
+							<ns0:SOURCE-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</ns0:SOURCE-REF>
+						</ns0:SIGNAL-FOR-ANALYSIS>
+						<ns0:EVENT-TYPE xsi:type="string">PHY</ns0:EVENT-TYPE>
+					</ns0:VIRTUAL-SIGNAL>
+					<ns0:VIRTUAL-SIGNAL uuid="df419ac0cbc311e8826b14abc584c8a4" xsi:type="virtualSessionSignal">
+						<ns0:NAME xsi:type="unicode">A2lFlag</ns0:NAME>
+						<ns0:SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<ns0:KEY xsi:type="unicode">GenericECU/SWIT_Comm_activationFlag</ns0:KEY>
+							<ns0:SOURCE-TYPE xsi:type="string">RECORDING-GROUP</ns0:SOURCE-TYPE>
+							<ns0:SOURCE-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</ns0:SOURCE-REF>
+						</ns0:SIGNAL-FOR-ANALYSIS>
+						<ns0:EVENT-TYPE xsi:type="string">PHY</ns0:EVENT-TYPE>
+					</ns0:VIRTUAL-SIGNAL>
+					<ns0:VIRTUAL-SIGNAL uuid="821653cfcbc411e8a3d914abc584c8a4" xsi:type="virtualSessionSignal">
+						<ns0:NAME xsi:type="unicode">THvariable</ns0:NAME>
+						<ns0:SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<ns0:KEY xsi:type="unicode">GenericECU/SWIT_RX_TestHook_Uint8</ns0:KEY>
+							<ns0:SOURCE-TYPE xsi:type="string">RECORDING-GROUP</ns0:SOURCE-TYPE>
+							<ns0:SOURCE-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</ns0:SOURCE-REF>
+						</ns0:SIGNAL-FOR-ANALYSIS>
+						<ns0:EVENT-TYPE xsi:type="string">PHY</ns0:EVENT-TYPE>
+					</ns0:VIRTUAL-SIGNAL>
+				</ns0:VIRTUAL-SIGNALS>
+			</ns0:VIRTUAL-SIGNALS-MANAGER>
+		</ns0:TRACE-ANALYSIS>
+	</ns0:TRACE-ANALYSES>
+</ns0:PACKAGE>

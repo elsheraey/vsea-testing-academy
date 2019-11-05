@@ -1,0 +1,92 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: GTW INV
+VAL_TABLE_ Md_Rq 3 "Not used" 2 "Not used" 1 "Speed Mode" 0 "Trq Mode" ;
+VAL_TABLE_ eMOT_Rq 1 "Standby" 0 "In Active" ;
+VAL_TABLE_ eMOT_Stat 5 "Fault" 4 "Spd" 3 "Trq" 2 "Standby" 1 "Passive" 0 "Init " ;
+VAL_TABLE_ Ign_Stat 1 "Ign On" 0 "Ign OFF" ;
+VAL_TABLE_ MOT_Spd_Mech 3 "Unused" 2 "PLL" 1 "Encoder" 0 "Resolver" ;
+VAL_TABLE_ Curr_Sens_Cnt 3 "3 Current Sensor" 2 " 2 Current Sensor" 1 "Unused" 0 "Unused" ;
+VAL_TABLE_ eMOT_Type 1 "IM" 0 "PMSM" ;
+
+
+BO_ 336 INV: 5 INV
+ SG_ eMOT_flt_stat : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Trq_cons_err : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Three_Phase_Error : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Pos_error : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Config_error : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ eMOT_Ctrl_Rotor : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ eMOT_Ctrl_Phase_Curr : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ctrl_Trq_est : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ eMOT_Stat : 0|3@1+ (1,0) [0|5] "" Vector__XXX
+
+BO_ 256 NM_eMOT: 1 GTW
+ SG_ NM_eMOT : 0|1@1+ (1,0) [0|1] ""  INV
+
+BO_ 292 GTW_124: 5 GTW
+ SG_ PLL_Ind : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Ign_Stat : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MOT_Spd_Mech : 3|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Ctrl_Trq_Rq : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Md_Rq : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ eMOT_Rq : 1|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Curr_Sens_Cnt : 8|2@1+ (1,0) [0|3] ""  INV
+ SG_ eMOT_Type : 0|1@1+ (1,0) [0|1] ""  INV
+
+
+
+BA_DEF_ SG_  "GenSigStartValue" FLOAT -3.4E+038 3.4E+038;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 336 15;
+BA_ "GenMsgCycleTime" BO_ 256 10;
+BA_ "GenMsgCycleTime" BO_ 292 20;
+BA_ "GenSigStartValue" SG_ 292 MOT_Spd_Mech 1;
+BA_ "GenSigStartValue" SG_ 292 Md_Rq 3;
+BA_ "GenSigStartValue" SG_ 292 Curr_Sens_Cnt 2;
+VAL_ 336 eMOT_Stat 4 "Description for the value '0x4'" 3 "Spd Operational" 2 "Trq Operational" 1 "StandBy" 0 "In Active" ;
+VAL_ 292 Ign_Stat 1 "Ign On" 0 "Ign OFF" ;
+VAL_ 292 MOT_Spd_Mech 3 "Unused" 2 "PLL" 1 "Encoder" 0 "Resolver" ;
+VAL_ 292 Md_Rq 3 "Not used" 2 "Not used" 1 "Speed Mode" 0 "Trq Mode" ;
+VAL_ 292 eMOT_Rq 1 "Standby" 0 "In Active" ;
+VAL_ 292 Curr_Sens_Cnt 3 "3 Current Sensor" 2 " 2 Current Sensor" 1 "Unused" 0 "Unused" ;
+VAL_ 292 eMOT_Type 1 "IM" 0 "PMSM" ;
+

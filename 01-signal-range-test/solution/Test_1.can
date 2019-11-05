@@ -1,0 +1,127 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  
+}
+
+void MainTest() 
+{  
+  testModuleTitle("Test 1");
+  testReportAddEngineerInfo("Mourad", "ElSheraey");
+  // testReportAddSetupInfo("", "");
+  
+  // Test Cases
+  
+  // Boundaries
+  TestCase1(-50);
+  TestCase1(-49);
+  TestCase1(-1);
+  TestCase1(0);
+  TestCase1(1);
+  TestCase1(49);
+  TestCase1(50);
+  
+  TestCase2(51);
+  TestCase2(-51);
+  
+  // SIGNAL_TIMEOUT
+  TestCase3();
+}
+
+testcase TestCase1(int input)
+{
+  char buf[100];
+ 
+  testCaseTitle("", "Test if Signal_8 is in the range [-50, 50].");
+  //testCaseDescription("Description");
+  
+  snprintf(buf, elcount(buf), "Set Signal_8 with Value [%d].", input);
+  testStep("", buf);
+  setSignal(Signal_8, input);
+  
+  testWaitForTimeout(10);
+   
+  if(getSignal(Signal_8) == @SYS_Signal_8)
+  {
+    testStepPass("SYS_Signal_8 is equal to the value of Signal_8.");
+  }
+  else
+  {
+    testStepFail("SYS_Signal_8 is equal to the value of Signal_8.");
+  }
+  
+  if (1 == @SYS_Signal_8_VALID)
+  {
+    testStepPass("SYS_Signal_8_VALID is equal to 1.");
+  }
+  else
+  {
+    testStepFail("SYS_Signal_8_VALID is equal to 1.");
+  }
+}
+
+testcase TestCase2(int input)
+{
+  char buf[100];
+ 
+  testCaseTitle("", "Test if Signal_8 is out of the range [-50, 50].");
+  //testCaseDescription("Description");
+  
+  snprintf(buf, elcount(buf), "Set Signal_8 with Value [%d].", input);
+  testStep("", buf);
+  setSignal(Signal_8, input);
+  
+  testWaitForTimeout(10);
+     
+  if(0 == @SYS_Signal_8)
+  {
+    testStepPass("SYS_Signal_8 is equal to the default value.");
+  }
+  else
+  {
+    testStepFail("SYS_Signal_8 is equal to the default value.");
+  }
+  
+  if (0 == @SYS_Signal_8_VALID)
+  {
+    testStepPass("SYS_Signal_8_VALID is equal to 0.");
+  }
+  else
+  {
+    testStepFail("SYS_Signal_8_VALID is equal to 0.");
+  }
+}
+
+testcase TestCase3()
+{
+  testCaseTitle("", "Test if Signal_8 is not sent on the bus for SIGNAL_TIMEOUT.");
+  //testCaseDescription("Description");
+  
+  testStep("", "Disable message carying Signal_8");
+  testDisableMsg(CCU_125);
+  
+  testStep("", "Wait [200]ms");
+  testWaitForTimeout(200);
+  
+  if (0 == @SYS_Signal_8 && 0 == @SYS_Signal_8_VALID)
+  {
+    testStepPass("SYS_Signal_8 equals to the default and SYS_Signal_8_VALID is equal to 0.");
+  }
+  else 
+  {
+    if (@SYS_Signal_8 != 0)
+    {
+      testStepFail("SYS_Signal_8 is equal to the default value.");
+    }
+    
+    if (@SYS_Signal_8_VALID != 0)
+    {
+      testStepFail("SYS_Signal_8_VALID is equal to 0.");
+    }
+  }
+}

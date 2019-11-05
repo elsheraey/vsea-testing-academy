@@ -1,0 +1,31 @@
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# CANoe / vTESTstudio runtime artifacts
+*.log
+*.blf
+*.asc
+*.bak
+~$*
+
+# Atmel Studio / AVR build output (regenerable)
+Debug/
+Release/
+*.o
+*.elf
+*.lss
+*.srec
+*.eep
+*.hex
+
+# Atmel Studio user state
+*.atsuo
+.vs/

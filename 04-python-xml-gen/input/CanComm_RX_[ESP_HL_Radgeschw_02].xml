@@ -1,0 +1,1450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PACKAGE format-rev="6" prog-version="7.1.0.75213" xmlns="http://www.tracetronic.de/xml/ecu-test" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.tracetronic.de/xml/ecu-test package.xsd">
+	<INFORMATION xsi:type="packageInfo">
+		<DESCRIPTION xsi:type="unicode"/>
+		<VERSION xsi:type="unicode"/>
+		<ALTERNATE-CALL-REPRESENTATION-ACTION-FIELD-TEMPLATE xsi:type="unicode"/>
+		<ALTERNATE-CALL-REPRESENTATION-EXPECTATION-FIELD-TEMPLATE xsi:type="unicode"/>
+	</INFORMATION>
+	<VARIABLES xsi:type="variableContainer">
+		<VARIABLE format-rev="1" xsi:type="variable">
+			<NAME xsi:type="unicode">offset</NAME>
+			<DESCRIPTION xsi:type="unicode"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="unicode">Raw_Value</NAME>
+			<DESCRIPTION xsi:type="unicode"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="unicode">Phys_value</NAME>
+			<DESCRIPTION xsi:type="unicode"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+		<VARIABLE format-rev="1" in="true" xsi:type="variable">
+			<NAME xsi:type="unicode">TestHookNumbervalue</NAME>
+			<DESCRIPTION xsi:type="unicode"/>
+			<DEFAULT-VALUE format-rev="1" xsi:type="value">
+				<DATA xsi:type="integer">0</DATA>
+			</DEFAULT-VALUE>
+		</VARIABLE>
+	</VARIABLES>
+	<MAPPING format-rev="1" xsi:type="localMappingSpace">
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">ActSpeed</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">DrvCtrlDem_ReactionSts_NONE</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">EcuProdDataParamOem.F1A3_EcuHwVersion</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">EmCalibReq</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">Emm_CurrentMode</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">Event_Memory_EventId_0</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">Event_Memory_EventId_1</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">Event_Memory_EventId_2</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">Event_Memory_EventId_3</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">Event_Memory_EventId_4</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">Event_Memory_EventId_5</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">Event_Memory_EventId_6</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">Event_Memory_EventId_7</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">Event_Memory_EventId_8</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">Event_Memory_EventId_9</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">F189_VWApplicationSoftwareVersionNumber</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">GenericECU/SWIT_Comm_activationFlag</ID>
+			<XACCESS xsi:type="xaCalibValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="unicode">GenericECU</ECU-KEY>
+				<LABEL xsi:type="unicode">SWIT_Comm_activationFlag</LABEL>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">GenericECU/SWIT_RX_TestHook_Ushort16</ID>
+			<XACCESS xsi:type="xaMeasValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="unicode">GenericECU</ECU-KEY>
+				<LABEL xsi:type="unicode">SWIT_RX_TestHook_Ushort16</LABEL>
+				<RASTER xsi:type="unicode">C0_1ms_Com</RASTER>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">GenericECU/SWIT_testHookNo</ID>
+			<XACCESS xsi:type="xaCalibValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="unicode">GenericECU</ECU-KEY>
+				<LABEL xsi:type="unicode">SWIT_testHookNo</LABEL>
+			</XACCESS>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">SftyC2cData_RslvrOffs</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">SftyC2cData_RslvrOffsVld</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">SftyInvActrSts</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms_Canape</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">SftySbcCtrlKl15Sts</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">SftyTqMonTqAct</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">SftyTqMonTqEstimd</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">SigWr_PECInIf_vWhlReRi_VW</ID>
+			<XACCESS xsi:type="xaReadWriteValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+			</XACCESS>
+			<AUTO-GENERATED xsi:type="boolean">False</AUTO-GENERATED>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">SpdAct</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">StateAct</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">StateReq</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">TqAct</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">TqMgr_OutputData_TqLimnMax</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">TqMgr_OutputData_TqLimnMin</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">TqReq</ID>
+			<XACCESS xsi:type="xaMissingVariable"/>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">WhlSpdBackLeft</ID>
+			<DESCRIPTION xsi:type="unicode">hinten links</DESCRIPTION>
+			<XACCESS format-rev="1" xsi:type="xaBusSignalVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<BUS-KEY xsi:type="unicode">A-CAN-FD</BUS-KEY>
+				<FRAME-NAME xsi:type="unicode">ESC_51</FRAME-NAME>
+				<SIGNAL-NAME xsi:type="unicode">ESP_HL_Radgeschw_02</SIGNAL-NAME>
+			</XACCESS>
+			<AUTO-GENERATED xsi:type="boolean">False</AUTO-GENERATED>
+			<CATEGORY xsi:type="unicode">ESC_51</CATEGORY>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">WhlSpdBackLeft_1ms</ID>
+			<XACCESS xsi:type="xaMeasValueVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<ECU-KEY xsi:type="unicode">GenericECU</ECU-KEY>
+				<LABEL xsi:type="unicode">SigWr_SgWrOutIf_vWhlReLe_VW_Phy_PECInIf_vWhlReLe_VW</LABEL>
+				<RASTER xsi:type="unicode">C0_1ms_Com</RASTER>
+			</XACCESS>
+			<AUTO-GENERATED xsi:type="boolean">False</AUTO-GENERATED>
+			<CATEGORY xsi:type="unicode">SigWr</CATEGORY>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">WhlSpdBackLeft_RBS</ID>
+			<DESCRIPTION xsi:type="unicode">hinten links</DESCRIPTION>
+			<XACCESS format-rev="1" xsi:type="xaBusSignalVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<BUS-KEY xsi:type="unicode">A-CAN-FD</BUS-KEY>
+				<FRAME-NAME xsi:type="unicode">ESC_51</FRAME-NAME>
+				<SIGNAL-NAME xsi:type="unicode">ESP_HL_Radgeschw_02</SIGNAL-NAME>
+				<MANIPULATION xsi:type="signalManipulationParams">
+					<DURATION style="message-count" xsi:type="manipulationDuration">
+						<VALUE xsi:type="integer">0</VALUE>
+					</DURATION>
+				</MANIPULATION>
+			</XACCESS>
+			<AUTO-GENERATED xsi:type="boolean">False</AUTO-GENERATED>
+			<CATEGORY xsi:type="unicode">ESC_51_RBS</CATEGORY>
+		</MAPPING-ITEM>
+		<MAPPING-ITEM format-rev="1" xsi:type="mappingItem">
+			<ID xsi:type="unicode">WhlSpdBackLeft_canape</ID>
+			<DESCRIPTION xsi:type="unicode">hinten links</DESCRIPTION>
+			<XACCESS format-rev="1" xsi:type="xaBusSignalVariable">
+				<MAPPING-ENUM xsi:type="vtabInfoEmpty"/>
+				<BUS-KEY xsi:type="unicode">A-CAN-FD_CANAPE</BUS-KEY>
+				<FRAME-NAME xsi:type="unicode">ESC_51</FRAME-NAME>
+				<SIGNAL-NAME xsi:type="unicode">ESP_HL_Radgeschw_02</SIGNAL-NAME>
+			</XACCESS>
+			<AUTO-GENERATED xsi:type="boolean">False</AUTO-GENERATED>
+			<CATEGORY xsi:type="unicode">ESC_51</CATEGORY>
+		</MAPPING-ITEM>
+	</MAPPING>
+	<TRACE-RECORDING format-rev="1" xsi:type="recordingManager">
+		<SIGNAL-GROUPS>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="unicode">A2l</NAME>
+				<DESCRIPTION xsi:type="unicode">...</DESCRIPTION>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">GenericECU/SWIT_RX_TestHook_Ushort16</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">GenericECU/SWIT_Comm_activationFlag</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">WhlSpdBackLeft_1ms</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="unicode">GenericECU_CANape</NAME>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms_Canape</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="unicode">A-CAN-FD_VWSignals</NAME>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">TqReq</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">StateReq</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">TqAct</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">SpdAct</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">StateAct</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">EmCalibReq</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="unicode">A2l_VWSignals</NAME>
+				<DESCRIPTION xsi:type="unicode">...</DESCRIPTION>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">Emm_CurrentMode</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">SftyTqMonTqAct</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">SftyTqMonTqEstimd</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">TqMgr_OutputData_TqLimnMax</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">TqMgr_OutputData_TqLimnMin</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">DrvCtrlDem_ReactionSts_NONE</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">SftyInvActrSts</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">SftySbcCtrlKl15Sts</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">Event_Memory_EventId_0</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">Event_Memory_EventId_1</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">Event_Memory_EventId_2</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">Event_Memory_EventId_3</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">Event_Memory_EventId_4</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">Event_Memory_EventId_5</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">Event_Memory_EventId_6</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">Event_Memory_EventId_7</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">Event_Memory_EventId_8</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">Event_Memory_EventId_9</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">SftyC2cData_RslvrOffsVld</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">SftyC2cData_RslvrOffs</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">ActSpeed</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">F189_VWApplicationSoftwareVersionNumber</MAPPING-REF>
+					</ELEMENT>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">EcuProdDataParamOem.F1A3_EcuHwVersion</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="signalGroup">
+				<NAME xsi:type="unicode">Canape_Signals</NAME>
+				<DESCRIPTION xsi:type="unicode">...</DESCRIPTION>
+				<SIGNALS>
+					<ELEMENT xsi:type="signal">
+						<MAPPING-REF xsi:type="unicode">WhlSpdBackLeft_canape</MAPPING-REF>
+					</ELEMENT>
+				</SIGNALS>
+			</ELEMENT>
+		</SIGNAL-GROUPS>
+		<RECORDING-GROUP>
+			<ELEMENT format-rev="2" xsi:type="recordingGroup">
+				<NAME xsi:type="unicode">Recording group for A2l</NAME>
+				<UUID xsi:type="string">0a345070784411e8aa9a14abc584c8a4</UUID>
+				<FILE-NAME xsi:type="unicode">A2l</FILE-NAME>
+				<SIGNAL-GROUP-REF>A2l</SIGNAL-GROUP-REF>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="recordingGroup">
+				<NAME xsi:type="unicode">Recording group for GenericECU_CANape</NAME>
+				<UUID xsi:type="string">78bba6a1997411e8aa073c18a00d9078</UUID>
+				<FILE-NAME xsi:type="unicode">GenericECU_CANape</FILE-NAME>
+				<SIGNAL-GROUP-REF>GenericECU_CANape</SIGNAL-GROUP-REF>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="recordingGroup">
+				<NAME xsi:type="unicode">A-CAN-FD_VWSignals</NAME>
+				<UUID xsi:type="string">edd6ec8fac4011e887c514abc584c8a4</UUID>
+				<FILE-NAME xsi:type="unicode">A-CAN-FD_VWSignals</FILE-NAME>
+				<SIGNAL-GROUP-REF>A-CAN-FD_VWSignals</SIGNAL-GROUP-REF>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="recordingGroup">
+				<NAME xsi:type="unicode">Recording group for A2l_VWSignals</NAME>
+				<UUID xsi:type="string">3b8454a1ac4111e8b7fb14abc584c8a4</UUID>
+				<FILE-NAME xsi:type="unicode">A2l_VWSignals</FILE-NAME>
+				<SIGNAL-GROUP-REF>A2l_VWSignals</SIGNAL-GROUP-REF>
+			</ELEMENT>
+			<ELEMENT format-rev="2" xsi:type="recordingGroup">
+				<NAME xsi:type="unicode">Recording group for Canape_Signals</NAME>
+				<UUID xsi:type="string">caadc1aebfde11e881e900a0c6000014</UUID>
+				<FILE-NAME xsi:type="unicode">Canape_Signals</FILE-NAME>
+				<SIGNAL-GROUP-REF>Canape_Signals</SIGNAL-GROUP-REF>
+			</ELEMENT>
+		</RECORDING-GROUP>
+	</TRACE-RECORDING>
+	<TESTSTEPS xsi:type="testCase">
+		<TESTSTEP format-rev="1" id="236446269" name="TsPrecondBlock" xsi:type="utility-fd32d18b-c16d-45ca-9934-f8bffe11fcc3">
+			<BLOCK-NAME xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="unicode">Precondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="unicode">Precondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+			</BLOCK-NAME>
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="unicode">Precondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="unicode">Precondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="2" id="236446271" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<BLOCK-NAME xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</BLOCK-NAME>
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">1: Run Pre-Condition Steps</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP format-rev="2" id="238694802" xsi:type="tsPackage">
+					<PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="unicode">..\\..\\..\\..\\..\\10_Library\\10_VW_MEB\\00_Global\\VW_MEB_GlobalPreCondition.pkg</VALUE>
+					</PACKAGE-REFERENCE>
+					<PARAM-ASSIGNMENTS/>
+					<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+				</TESTSTEP>
+				<TESTSTEP format-rev="2" id="238694806" xsi:type="tsPackage">
+					<PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="unicode">..\\..\\..\\..\\..\\10_Library\\00_Common\\30_HIL_Model\\20_Sensors\\Resolver_Speed.pkg</VALUE>
+					</PACKAGE-REFERENCE>
+					<PARAM-ASSIGNMENTS>
+						<ASSIGNMENT dkey="Mode">
+							<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="unicode">SET</VALUE>
+							</DVALUE>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="speed">
+							<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">0</VALUE>
+							</DVALUE>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="speedSlope">
+							<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">4000</VALUE>
+							</DVALUE>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="waitToReachSpd">
+							<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="unicode">yes</VALUE>
+							</DVALUE>
+						</ASSIGNMENT>
+					</PARAM-ASSIGNMENTS>
+					<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+				</TESTSTEP>
+				<TESTSTEP format-rev="2" id="238694823" xsi:type="tsPackage">
+					<PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="unicode">..\\..\\..\\..\\..\\10_Library\\00_Common\\110_Misc\\Connect_Appl_Tool.pkg</VALUE>
+					</PACKAGE-REFERENCE>
+					<PARAM-ASSIGNMENTS>
+						<ASSIGNMENT dkey="ApplTool">
+							<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="unicode">CANAPE</VALUE>
+							</DVALUE>
+						</ASSIGNMENT>
+						<ASSIGNMENT dkey="Connection">
+							<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="unicode">START</VALUE>
+							</DVALUE>
+						</ASSIGNMENT>
+					</PARAM-ASSIGNMENTS>
+					<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+				</TESTSTEP>
+				<TESTSTEP id="238158061" name="TsStartTrace" xsi:type="utility-9308d99e-50ac-11dc-8fe5-001143176a1c">
+					<NAME xsi:type="unicode">A2l</NAME>
+					<RECORDING-GROUP-REF-BY-UUID>0a345070784411e8aa9a14abc584c8a4</RECORDING-GROUP-REF-BY-UUID>
+				</TESTSTEP>
+				<TESTSTEP id="238158064" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">500</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="238158068" name="TsStartTrace" xsi:type="utility-9308d99e-50ac-11dc-8fe5-001143176a1c">
+					<NAME xsi:type="unicode">CANape</NAME>
+					<RECORDING-GROUP-REF-BY-UUID>78bba6a1997411e8aa073c18a00d9078</RECORDING-GROUP-REF-BY-UUID>
+				</TESTSTEP>
+				<TESTSTEP id="238158071" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">500</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="238158075" name="TsStartTrace" xsi:type="utility-9308d99e-50ac-11dc-8fe5-001143176a1c">
+					<NAME xsi:type="unicode"/>
+					<RECORDING-GROUP-REF-BY-UUID>edd6ec8fac4011e887c514abc584c8a4</RECORDING-GROUP-REF-BY-UUID>
+				</TESTSTEP>
+				<TESTSTEP id="238158078" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">500</VALUE>
+					</TIME>
+				</TESTSTEP>
+				<TESTSTEP id="238158082" name="TsStartTrace" xsi:type="utility-9308d99e-50ac-11dc-8fe5-001143176a1c">
+					<NAME xsi:type="unicode"/>
+					<RECORDING-GROUP-REF-BY-UUID>caadc1aebfde11e881e900a0c6000014</RECORDING-GROUP-REF-BY-UUID>
+				</TESTSTEP>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="2" id="236446275" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+			<BLOCK-NAME xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="unicode"/>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+			</BLOCK-NAME>
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="unicode">Action</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<TESTSTEP format-rev="2" id="238697586" xsi:type="tsPackage">
+				<PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+					<VALUE xsi:type="unicode">..\\..\\..\\..\\..\\10_Library\\00_Common\\30_HIL_Model\\20_Sensors\\Resolver_Speed.pkg</VALUE>
+				</PACKAGE-REFERENCE>
+				<PARAM-ASSIGNMENTS>
+					<ASSIGNMENT dkey="Mode">
+						<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="unicode">SET</VALUE>
+						</DVALUE>
+					</ASSIGNMENT>
+					<ASSIGNMENT dkey="speed">
+						<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">500</VALUE>
+						</DVALUE>
+					</ASSIGNMENT>
+					<ASSIGNMENT dkey="speedSlope">
+						<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">4000</VALUE>
+						</DVALUE>
+					</ASSIGNMENT>
+					<ASSIGNMENT dkey="waitToReachSpd">
+						<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="unicode">yes</VALUE>
+						</DVALUE>
+					</ASSIGNMENT>
+				</PARAM-ASSIGNMENTS>
+				<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+			</TESTSTEP>
+			<TESTSTEP format-rev="2" id="236446277" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<BLOCK-NAME xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</BLOCK-NAME>
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">2: Set Var [x1] by [x2] using XCP [x3]</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="238158993" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="unicode">GenericECU/SWIT_testHookNo</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA xsi:type="varBaseExpression">
+							<NAME xsi:type="unicode">TestHookNumbervalue</NAME>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<Z-UNIT xsi:type="unicode">u_none</Z-UNIT>
+						<VALUE-TYPE xsi:type="unicode">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="236525498" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="unicode">GenericECU/SWIT_testHookNo</MAPPING-REF>
+					<EXPECTATION xsi:type="finallyTrueOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="unicode">==</RELATION>
+							<VALUE xsi:type="varBaseExpression">
+								<NAME xsi:type="unicode">TestHookNumbervalue</NAME>
+							</VALUE>
+						</EXPRESSION>
+						<TIME format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1000</VALUE>
+						</TIME>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<Z-UNIT xsi:type="unicode">u_none</Z-UNIT>
+						<VALUE-TYPE xsi:type="unicode">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="2" id="236446287" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<BLOCK-NAME xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</BLOCK-NAME>
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">4: Set signal [x1] on can bus using canoe with physical Value [x2]</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="238159121" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="unicode">WhlSpdBackLeft_RBS</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA xsi:type="varBaseExpression">
+							<NAME xsi:type="unicode">Phys_value</NAME>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="unicode">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP id="238159127" xsi:type="tsRead">
+					<MAPPING-REF xsi:type="unicode">WhlSpdBackLeft</MAPPING-REF>
+					<EXPECTATION xsi:type="finallyTrueOption">
+						<EXPRESSION xsi:type="builtNumericExpression">
+							<RELATION xsi:type="unicode">==</RELATION>
+							<VALUE xsi:type="varBaseExpression">
+								<NAME xsi:type="unicode">Phys_value</NAME>
+							</VALUE>
+						</EXPRESSION>
+						<TIME format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">1000</VALUE>
+						</TIME>
+					</EXPECTATION>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<VALUE-TYPE xsi:type="unicode">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+				<TESTSTEP format-rev="2" id="238155387" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+					<BLOCK-NAME xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="en_US">
+								<DVALUE xsi:type="unicode"/>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+					</BLOCK-NAME>
+					<ACTION xsi:type="I18NItem">
+						<MULTILANGDATA>
+							<ELEMENT dkey="en_US">
+								<DVALUE xsi:type="unicode">3: Set Var [x1] by [x2] using XCP [x3]</DVALUE>
+							</ELEMENT>
+						</MULTILANGDATA>
+						<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+					</ACTION>
+					<TESTSTEP id="238159028" xsi:type="tsWrite">
+						<MAPPING-REF xsi:type="unicode">GenericECU/SWIT_Comm_activationFlag</MAPPING-REF>
+						<VALUE xsi:type="expressionValue">
+							<DATA format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">1</VALUE>
+							</DATA>
+						</VALUE>
+						<METRIC format-rev="1" xsi:type="metricInfo">
+							<Z-UNIT xsi:type="unicode">u_none</Z-UNIT>
+							<VALUE-TYPE xsi:type="unicode">PHYS</VALUE-TYPE>
+							<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+						</METRIC>
+					</TESTSTEP>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="2" id="236446339" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<BLOCK-NAME xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</BLOCK-NAME>
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">12: Wait [x1] ms</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<EXPECTATION-VALUE xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">Check variable [x1] with [x2] value [x3]</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</EXPECTATION-VALUE>
+				<TESTSTEP id="236446341" name="TsWait" xsi:type="utility-62d5a961-4fef-11dc-9944-0013728784ee">
+					<TIME format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="integer">10</VALUE>
+					</TIME>
+				</TESTSTEP>
+			</TESTSTEP>
+			<TESTSTEP format-rev="2" id="236446346" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<BLOCK-NAME xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</BLOCK-NAME>
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">13: Set Var [x1] by [x2] using XCP [x3]</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP id="238159037" xsi:type="tsWrite">
+					<MAPPING-REF xsi:type="unicode">GenericECU/SWIT_Comm_activationFlag</MAPPING-REF>
+					<VALUE xsi:type="expressionValue">
+						<DATA format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.0</VALUE>
+						</DATA>
+					</VALUE>
+					<METRIC format-rev="1" xsi:type="metricInfo">
+						<Z-UNIT xsi:type="unicode">u_none</Z-UNIT>
+						<VALUE-TYPE xsi:type="unicode">PHYS</VALUE-TYPE>
+						<DATA-TYPE xsi:type="string">VALUE</DATA-TYPE>
+					</METRIC>
+				</TESTSTEP>
+			</TESTSTEP>
+		</TESTSTEP>
+		<TESTSTEP format-rev="1" id="236446351" name="TsPostcondBlock" xsi:type="utility-0d2ac4dc-1d8f-4182-81d1-a5d5ca74a44f">
+			<BLOCK-NAME xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="unicode">Postcondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="unicode">Postcondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+			</BLOCK-NAME>
+			<ACTION xsi:type="I18NItem">
+				<MULTILANGDATA>
+					<ELEMENT dkey="de_DE">
+						<DVALUE xsi:type="unicode">Postcondition</DVALUE>
+					</ELEMENT>
+					<ELEMENT dkey="en_US">
+						<DVALUE xsi:type="unicode">Postcondition</DVALUE>
+					</ELEMENT>
+				</MULTILANGDATA>
+				<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+			</ACTION>
+			<EFFECT-TEST-RESULT xsi:type="boolean">False</EFFECT-TEST-RESULT>
+			<TESTSTEP format-rev="2" id="236446353" name="TsBlock" xsi:type="utility-2752ad1e-4fef-11dc-81d4-0013728784ee">
+				<BLOCK-NAME xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode"/>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</BLOCK-NAME>
+				<ACTION xsi:type="I18NItem">
+					<MULTILANGDATA>
+						<ELEMENT dkey="en_US">
+							<DVALUE xsi:type="unicode">14: Run Post-Condition Steps</DVALUE>
+						</ELEMENT>
+					</MULTILANGDATA>
+					<INITIAL-LANGUAGE xsi:type="unicode">en_US</INITIAL-LANGUAGE>
+				</ACTION>
+				<TESTSTEP format-rev="2" id="236446530" xsi:type="tsPackage">
+					<PACKAGE-REFERENCE format-rev="1" xsi:type="valueBaseExpression">
+						<VALUE xsi:type="unicode">..\\..\\..\\..\\..\\10_Library\\10_VW_MEB\\00_Global\\VW_MEB_GlobalPostCondition.pkg</VALUE>
+					</PACKAGE-REFERENCE>
+					<PARAM-ASSIGNMENTS/>
+					<ALTERNATIVE-MAPPING-SPACE format-rev="1" xsi:type="mappingSpace"/>
+				</TESTSTEP>
+				<TESTSTEP id="238158155" name="TsStopTrace" xsi:type="utility-d12f5791-50ac-11dc-8eb4-001143176a1c">
+					<NAME xsi:type="unicode">Stop CANape</NAME>
+					<RECORDING-GROUP-REF-BY-UUID>78bba6a1997411e8aa073c18a00d9078</RECORDING-GROUP-REF-BY-UUID>
+				</TESTSTEP>
+				<TESTSTEP id="238158159" name="TsStopTrace" xsi:type="utility-d12f5791-50ac-11dc-8eb4-001143176a1c">
+					<NAME xsi:type="unicode">Stop A2l</NAME>
+					<RECORDING-GROUP-REF-BY-UUID>0a345070784411e8aa9a14abc584c8a4</RECORDING-GROUP-REF-BY-UUID>
+				</TESTSTEP>
+				<TESTSTEP id="238158163" name="TsStopTrace" xsi:type="utility-d12f5791-50ac-11dc-8eb4-001143176a1c">
+					<NAME xsi:type="unicode"/>
+					<RECORDING-GROUP-REF-BY-UUID>edd6ec8fac4011e887c514abc584c8a4</RECORDING-GROUP-REF-BY-UUID>
+				</TESTSTEP>
+				<TESTSTEP id="238158167" name="TsStopTrace" xsi:type="utility-d12f5791-50ac-11dc-8eb4-001143176a1c">
+					<NAME xsi:type="unicode"/>
+					<RECORDING-GROUP-REF-BY-UUID>caadc1aebfde11e881e900a0c6000014</RECORDING-GROUP-REF-BY-UUID>
+				</TESTSTEP>
+			</TESTSTEP>
+		</TESTSTEP>
+	</TESTSTEPS>
+	<TRACE-ANALYSES format-rev="1" xsi:type="traceAnalyses">
+		<TRACE-ANALYSIS format-rev="3" uuid="b07fa751cbc211e8895f14abc584c8a4" xsi:type="traceAnalysis">
+			<NAME xsi:type="unicode">Synchronisation</NAME>
+			<ANALYSISITEM format-rev="1" uuid="b07fce61cbc211e8937f14abc584c8a4" xsi:type="episode">
+				<NAME xsi:type="unicode">New episode</NAME>
+				<ANALYSISITEM format-rev="2" poolRev="4" uuid="b07fce62cbc211e8b96214abc584c8a4" xsi:type="referencingTraceStep">
+					<NAME xsi:type="unicode">Synchronization</NAME>
+					<ANALYSISITEM format-rev="3" uuid="b07fce63cbc211e8a93c14abc584c8a4" xsi:type="plotItem">
+						<NAME xsi:type="unicode">Plot</NAME>
+						<SUB-PLOTS>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES>
+									<ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+										<NAME xsi:type="unicode">TOSYNC</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+									<ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+										<NAME xsi:type="unicode">REFERENCE</NAME>
+										<AXIS xsi:type="integer">0</AXIS>
+									</ENTITY>
+								</ENTITIES>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">separate</TYPE>
+								<ENTITIES/>
+								<AXES>
+									<AXIS xsi:type="plotAxis"/>
+								</AXES>
+							</SUB-PLOT>
+							<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+								<TYPE xsi:type="string">common</TYPE>
+								<ENTITIES/>
+								<AXES/>
+							</SUB-PLOT>
+						</SUB-PLOTS>
+						<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+							<CONDITION xsi:type="unicode">NONE</CONDITION>
+							<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-OVERVIEW>
+						<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+							<CONDITION xsi:type="unicode">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-PARENT-CONTEXT>
+						<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+							<CONDITION xsi:type="unicode">NEVER</CONDITION>
+							<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="integer">5</VALUE>
+							</MAX-NUMBER>
+							<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-LEFT>
+							<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+								<VALUE xsi:type="float">0.5</VALUE>
+							</EXPAND-XLIMITS-RIGHT>
+						</SUB-CONFIG-DETAILS>
+						<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+						<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+					</ANALYSISITEM>
+					<SIGNAL-BINDING xsi:type="signalBinding">
+						<PARAMETER dkey="REFERENCE">
+							<DVALUE format-rev="1" xsi:type="signalParameter">
+								<REF-SIGNAL-NAME xsi:type="unicode">CANape_Signal</REF-SIGNAL-NAME>
+							</DVALUE>
+						</PARAMETER>
+						<PARAMETER dkey="TOSYNC">
+							<DVALUE format-rev="1" xsi:type="signalParameter">
+								<REF-SIGNAL-NAME xsi:type="unicode">INCA_Signal</REF-SIGNAL-NAME>
+							</DVALUE>
+						</PARAMETER>
+					</SIGNAL-BINDING>
+					<PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+						<PARAM-ASSIGNMENTS>
+							<ASSIGNMENT dkey="calculatedOffset">
+								<DVALUE xsi:type="varBaseExpression">
+									<NAME xsi:type="unicode">offset</NAME>
+								</DVALUE>
+							</ASSIGNMENT>
+							<ASSIGNMENT dkey="ignoreAbove">
+								<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">50</VALUE>
+								</DVALUE>
+							</ASSIGNMENT>
+							<ASSIGNMENT dkey="ignoreBelow">
+								<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">20</VALUE>
+								</DVALUE>
+							</ASSIGNMENT>
+						</PARAM-ASSIGNMENTS>
+					</PARAM-ASSIGNMENTS>
+					<REPORT-CONFIG xsi:type="trcpReportConfig">
+						<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+						<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+					</REPORT-CONFIG>
+					<PROTOTYPE-ID xsi:type="unicode">00_Common\Misc\Synchronization</PROTOTYPE-ID>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<ANALYSISITEM format-rev="1" uuid="b07fce64cbc211e88ce714abc584c8a4" xsi:type="episode">
+				<NAME xsi:type="unicode">New episode</NAME>
+				<ANALYSISITEM format-rev="1" uuid="b07fce65cbc211e8a35914abc584c8a4" xsi:type="calculation">
+					<FORMULA xsi:type="unicode">user.HandOverParameters.Write(offset) or CANape_Signal</FORMULA>
+					<REPORT-CONFIG xsi:type="trcpReportConfig">
+						<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+						<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+					</REPORT-CONFIG>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<SYNCHRONISATION-CONFIG xsi:type="syncConfig"/>
+			<SYNCHRONISATION-ACTIVATED xsi:type="boolean">False</SYNCHRONISATION-ACTIVATED>
+			<TRACE-MERGE-FILEPATH format-rev="1" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="unicode"/>
+			</TRACE-MERGE-FILEPATH>
+			<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<VIRTUAL-SIGNALS>
+					<VIRTUAL-SIGNAL uuid="e88a994f997911e89e003c18a00d9078" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="unicode">INCA_Signal</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">RAW</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="e8e05a70997911e88c3d3c18a00d9078" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="unicode">CANape_Signal</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms_Canape</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">78bba6a1997411e8aa073c18a00d9078</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">RAW</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+				</VIRTUAL-SIGNALS>
+			</VIRTUAL-SIGNALS-MANAGER>
+		</TRACE-ANALYSIS>
+		<TRACE-ANALYSIS format-rev="3" uuid="b5bf098fcbc211e88d9814abc584c8a4" xsi:type="traceAnalysis">
+			<NAME xsi:type="unicode">Trace analysis 1</NAME>
+			<ANALYSISITEM format-rev="1" uuid="b5bf0990cbc211e8826214abc584c8a4" xsi:type="episode">
+				<NAME xsi:type="unicode">Show Synchronization</NAME>
+				<ANALYSISITEM format-rev="3" uuid="b5bf0991cbc211e8805d14abc584c8a4" xsi:type="plotItem">
+					<NAME xsi:type="unicode">Plot</NAME>
+					<SUB-PLOTS>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES>
+								<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="unicode">A2LSignal_CANape_Sync</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+								<ENTITY format-rev="1" isTraceStepSignal="False" xsi:type="plotSignalEntity">
+									<NAME xsi:type="unicode">A2LSignal_INCA_Sync</NAME>
+									<AXIS xsi:type="integer">0</AXIS>
+								</ENTITY>
+							</ENTITIES>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">separate</TYPE>
+							<ENTITIES/>
+							<AXES>
+								<AXIS xsi:type="plotAxis"/>
+							</AXES>
+						</SUB-PLOT>
+						<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+							<TYPE xsi:type="string">common</TYPE>
+							<ENTITIES/>
+							<AXES/>
+						</SUB-PLOT>
+					</SUB-PLOTS>
+					<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+						<CONDITION xsi:type="unicode">NONE</CONDITION>
+						<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-OVERVIEW>
+					<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+						<CONDITION xsi:type="unicode">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-PARENT-CONTEXT>
+					<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+						<CONDITION xsi:type="unicode">NEVER</CONDITION>
+						<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="integer">5</VALUE>
+						</MAX-NUMBER>
+						<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-LEFT>
+						<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+							<VALUE xsi:type="float">0.5</VALUE>
+						</EXPAND-XLIMITS-RIGHT>
+					</SUB-CONFIG-DETAILS>
+					<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+					<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<ANALYSISITEM format-rev="1" uuid="b5bf0992cbc211e8a89d14abc584c8a4" xsi:type="episode">
+				<NAME xsi:type="unicode">Raw</NAME>
+				<ANALYSISITEM uuid="b5bf0993cbc211e8897d14abc584c8a4" xsi:type="analysisBlock">
+					<NAME xsi:type="unicode">Check CANSignal</NAME>
+					<ANALYSISITEM format-rev="2" poolRev="4" uuid="b5bf0994cbc211e885c614abc584c8a4" xsi:type="referencingTraceStep">
+						<NAME xsi:type="unicode">TwoSignalsTimingReaction</NAME>
+						<ANALYSISITEM format-rev="3" uuid="b5bf0995cbc211e8841d14abc584c8a4" xsi:type="plotItem">
+							<NAME xsi:type="unicode">Plot</NAME>
+							<SUB-PLOTS>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES>
+										<ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<NAME xsi:type="unicode">Signal2</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+										<ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<NAME xsi:type="unicode">Signal1</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+									</ENTITIES>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">separate</TYPE>
+									<ENTITIES/>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+							</SUB-PLOTS>
+							<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+								<CONDITION xsi:type="unicode">NONE</CONDITION>
+								<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-OVERVIEW>
+							<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+								<CONDITION xsi:type="unicode">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-PARENT-CONTEXT>
+							<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+								<CONDITION xsi:type="unicode">NONE</CONDITION>
+								<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-DETAILS>
+							<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+							<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+						</ANALYSISITEM>
+						<SIGNAL-BINDING xsi:type="signalBinding">
+							<PARAMETER dkey="Signal1">
+								<DVALUE format-rev="1" xsi:type="signalParameter">
+									<REF-SIGNAL-NAME xsi:type="unicode">CANSignal</REF-SIGNAL-NAME>
+								</DVALUE>
+							</PARAMETER>
+							<PARAMETER dkey="Signal2">
+								<DVALUE format-rev="1" xsi:type="signalParameter">
+									<REF-SIGNAL-NAME xsi:type="unicode">A2LSignal</REF-SIGNAL-NAME>
+								</DVALUE>
+							</PARAMETER>
+						</SIGNAL-BINDING>
+						<PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+							<PARAM-ASSIGNMENTS>
+								<ASSIGNMENT dkey="AllowFailedInstances">
+									<DVALUE format-rev="1" xsi:type="valueBaseExpression"/>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="ExpectationValue1">
+									<DVALUE xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">Phys_value</NAME>
+									</DVALUE>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="ExpectationValue2">
+									<DVALUE xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">Raw_Value</NAME>
+									</DVALUE>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="MaxParallelInstances">
+									<DVALUE format-rev="1" xsi:type="valueBaseExpression"/>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="MinMaxSuccessfulInstances">
+									<DVALUE xsi:type="listOrTupleBaseExpression">
+										<IS-LIST xsi:type="boolean">False</IS-LIST>
+										<EXPRESSION-LIST>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="integer">1</VALUE>
+											</BASE-EXPRESSION>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression"/>
+										</EXPRESSION-LIST>
+									</DVALUE>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="maxTime">
+									<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">5.5555</VALUE>
+									</DVALUE>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="minTime">
+									<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">0</VALUE>
+									</DVALUE>
+								</ASSIGNMENT>
+							</PARAM-ASSIGNMENTS>
+						</PARAM-ASSIGNMENTS>
+						<REPORT-CONFIG xsi:type="trcpReportConfig">
+							<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+							<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+						</REPORT-CONFIG>
+						<PROTOTYPE-ID xsi:type="unicode">10_VW_MEB\Comm_SWIT\TwoSignalsTimingReaction</PROTOTYPE-ID>
+					</ANALYSISITEM>
+					<ANALYSISITEM format-rev="2" poolRev="4" uuid="8ce3fb9ecbc411e8827f14abc584c8a4" xsi:type="referencingTraceStep">
+						<NAME xsi:type="unicode">TwoSignalsTimingReaction</NAME>
+						<ANALYSISITEM format-rev="3" uuid="8ce3fb9fcbc411e8862c14abc584c8a4" xsi:type="plotItem">
+							<NAME xsi:type="unicode">Plot</NAME>
+							<SUB-PLOTS>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES>
+										<ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<NAME xsi:type="unicode">Signal2</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+										<ENTITY format-rev="1" isTraceStepSignal="True" xsi:type="plotSignalEntity">
+											<NAME xsi:type="unicode">Signal1</NAME>
+											<AXIS xsi:type="integer">0</AXIS>
+										</ENTITY>
+									</ENTITIES>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">separate</TYPE>
+									<ENTITIES/>
+									<AXES>
+										<AXIS xsi:type="plotAxis"/>
+									</AXES>
+								</SUB-PLOT>
+								<SUB-PLOT format-rev="1" xsi:type="plotSubPlot">
+									<TYPE xsi:type="string">common</TYPE>
+									<ENTITIES/>
+									<AXES/>
+								</SUB-PLOT>
+							</SUB-PLOTS>
+							<SUB-CONFIG-OVERVIEW xsi:type="plotSubConfig">
+								<CONDITION xsi:type="unicode">NONE</CONDITION>
+								<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-OVERVIEW>
+							<SUB-CONFIG-PARENT-CONTEXT xsi:type="plotSubConfig">
+								<CONDITION xsi:type="unicode">NEVER</CONDITION>
+								<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-PARENT-CONTEXT>
+							<SUB-CONFIG-DETAILS xsi:type="plotSubConfig">
+								<CONDITION xsi:type="unicode">NONE</CONDITION>
+								<MAX-NUMBER format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="integer">5</VALUE>
+								</MAX-NUMBER>
+								<EXPAND-XLIMITS-LEFT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-LEFT>
+								<EXPAND-XLIMITS-RIGHT format-rev="1" xsi:type="valueBaseExpression">
+									<VALUE xsi:type="float">0.5</VALUE>
+								</EXPAND-XLIMITS-RIGHT>
+							</SUB-CONFIG-DETAILS>
+							<SIGNAL-NAME-TYPE xsi:type="string">generic</SIGNAL-NAME-TYPE>
+							<LEGEND-LOCATION xsi:type="integer">11</LEGEND-LOCATION>
+						</ANALYSISITEM>
+						<SIGNAL-BINDING xsi:type="signalBinding">
+							<PARAMETER dkey="Signal1">
+								<DVALUE format-rev="1" xsi:type="signalParameter">
+									<REF-SIGNAL-NAME xsi:type="unicode">A2lFlag</REF-SIGNAL-NAME>
+								</DVALUE>
+							</PARAMETER>
+							<PARAMETER dkey="Signal2">
+								<DVALUE format-rev="1" xsi:type="signalParameter">
+									<REF-SIGNAL-NAME xsi:type="unicode">THvariable</REF-SIGNAL-NAME>
+								</DVALUE>
+							</PARAMETER>
+						</SIGNAL-BINDING>
+						<PARAM-ASSIGNMENTS xsi:type="trcpParameterAssignments">
+							<PARAM-ASSIGNMENTS>
+								<ASSIGNMENT dkey="AllowFailedInstances">
+									<DVALUE format-rev="1" xsi:type="valueBaseExpression"/>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="ExpectationValue1">
+									<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">1</VALUE>
+									</DVALUE>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="ExpectationValue2">
+									<DVALUE xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">Raw_Value</NAME>
+									</DVALUE>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="MaxParallelInstances">
+									<DVALUE format-rev="1" xsi:type="valueBaseExpression"/>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="MinMaxSuccessfulInstances">
+									<DVALUE xsi:type="listOrTupleBaseExpression">
+										<IS-LIST xsi:type="boolean">False</IS-LIST>
+										<EXPRESSION-LIST>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression">
+												<VALUE xsi:type="integer">1</VALUE>
+											</BASE-EXPRESSION>
+											<BASE-EXPRESSION format-rev="1" xsi:type="valueBaseExpression"/>
+										</EXPRESSION-LIST>
+									</DVALUE>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="maxTime">
+									<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="float">5.5555</VALUE>
+									</DVALUE>
+								</ASSIGNMENT>
+								<ASSIGNMENT dkey="minTime">
+									<DVALUE format-rev="1" xsi:type="valueBaseExpression">
+										<VALUE xsi:type="integer">0</VALUE>
+									</DVALUE>
+								</ASSIGNMENT>
+							</PARAM-ASSIGNMENTS>
+						</PARAM-ASSIGNMENTS>
+						<REPORT-CONFIG xsi:type="trcpReportConfig">
+							<MAX-SPOTS xsi:type="integer">100</MAX-SPOTS>
+							<MIN-DELTA xsi:type="float">0.0</MIN-DELTA>
+						</REPORT-CONFIG>
+						<PROTOTYPE-ID xsi:type="unicode">10_VW_MEB\Comm_SWIT\TwoSignalsTimingReaction</PROTOTYPE-ID>
+					</ANALYSISITEM>
+				</ANALYSISITEM>
+			</ANALYSISITEM>
+			<SYNCHRONISATION-CONFIG xsi:type="syncConfig">
+				<ROOT-GROUP-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</ROOT-GROUP-REF>
+				<SYNCHRONISATIONS>
+					<SYNCHRONISATION format-rev="1" xsi:type="offsetSynchronisation">
+						<RECORDING-GROUP-REF xsi:type="string">78bba6a1997411e8aa073c18a00d9078</RECORDING-GROUP-REF>
+						<MASTER-GROUP-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</MASTER-GROUP-REF>
+						<OFFSET xsi:type="functionBaseExpression">
+							<COMPONENT xsi:type="attributeBaseExpression">
+								<COMPONENT xsi:type="attributeBaseExpression">
+									<COMPONENT xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">user</NAME>
+									</COMPONENT>
+									<ATTR-NAME xsi:type="string">HandOverParameters</ATTR-NAME>
+								</COMPONENT>
+								<ATTR-NAME xsi:type="string">Read</ATTR-NAME>
+							</COMPONENT>
+						</OFFSET>
+						<OFFSET-CHECKED xsi:type="boolean">True</OFFSET-CHECKED>
+					</SYNCHRONISATION>
+					<SYNCHRONISATION format-rev="1" xsi:type="offsetSynchronisation">
+						<RECORDING-GROUP-REF xsi:type="string">caadc1aebfde11e881e900a0c6000014</RECORDING-GROUP-REF>
+						<MASTER-GROUP-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</MASTER-GROUP-REF>
+						<OFFSET xsi:type="functionBaseExpression">
+							<COMPONENT xsi:type="attributeBaseExpression">
+								<COMPONENT xsi:type="attributeBaseExpression">
+									<COMPONENT xsi:type="varBaseExpression">
+										<NAME xsi:type="unicode">user</NAME>
+									</COMPONENT>
+									<ATTR-NAME xsi:type="string">HandOverParameters</ATTR-NAME>
+								</COMPONENT>
+								<ATTR-NAME xsi:type="string">Read</ATTR-NAME>
+							</COMPONENT>
+						</OFFSET>
+						<OFFSET-CHECKED xsi:type="boolean">True</OFFSET-CHECKED>
+					</SYNCHRONISATION>
+				</SYNCHRONISATIONS>
+			</SYNCHRONISATION-CONFIG>
+			<SYNCHRONISATION-ACTIVATED xsi:type="boolean">True</SYNCHRONISATION-ACTIVATED>
+			<TRACE-MERGE-FILEPATH format-rev="1" xsi:type="valueBaseExpression">
+				<VALUE xsi:type="unicode"/>
+			</TRACE-MERGE-FILEPATH>
+			<VIRTUAL-SIGNALS-MANAGER xsi:type="virtualSignalsManager">
+				<VIRTUAL-SIGNALS>
+					<VIRTUAL-SIGNAL uuid="dc353be1998011e8ba123c18a00d9078" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="unicode">A2LSignal</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="unicode">WhlSpdBackLeft_1ms</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="dbd25b61998011e8a9d03c18a00d9078" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="unicode">CANSignal</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="unicode">WhlSpdBackLeft_canape</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">caadc1aebfde11e881e900a0c6000014</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="e60dc361998211e89b373c18a00d9078" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="unicode">A2LSignal_CANape_Sync</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms_Canape</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">78bba6a1997411e8aa073c18a00d9078</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="ffbdb0e1998211e8a8263c18a00d9078" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="unicode">A2LSignal_INCA_Sync</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="unicode">SftyRslvrCalcnMeclSpdFildRadSec_1ms</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="df419ac0cbc311e8826b14abc584c8a4" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="unicode">A2lFlag</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="unicode">GenericECU/SWIT_Comm_activationFlag</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+					<VIRTUAL-SIGNAL uuid="821653cfcbc411e8a3d914abc584c8a4" xsi:type="virtualSessionSignal">
+						<NAME xsi:type="unicode">THvariable</NAME>
+						<SIGNAL-FOR-ANALYSIS xsi:type="recordingSignalForAnalysis">
+							<KEY xsi:type="unicode">GenericECU/SWIT_RX_TestHook_Ushort16</KEY>
+							<SOURCE-TYPE xsi:type="string">RECORDING-GROUP</SOURCE-TYPE>
+							<SOURCE-REF xsi:type="string">0a345070784411e8aa9a14abc584c8a4</SOURCE-REF>
+						</SIGNAL-FOR-ANALYSIS>
+						<EVENT-TYPE xsi:type="string">PHY</EVENT-TYPE>
+					</VIRTUAL-SIGNAL>
+				</VIRTUAL-SIGNALS>
+			</VIRTUAL-SIGNALS-MANAGER>
+		</TRACE-ANALYSIS>
+	</TRACE-ANALYSES>
+</PACKAGE>
